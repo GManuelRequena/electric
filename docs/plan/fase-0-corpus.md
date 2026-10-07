@@ -6,7 +6,7 @@ Transcribir a JSON tipado las tablas de la AEA 90364 (sección 770, viviendas) q
 ## Requisitos previos
 - Acceso a los PDFs. Están en Google Drive, carpeta `11vFi1ma2vcENBdrFtXfNHp79D5JUeELO`:
   - `MODULO_1_EI_1.pdf` a `MODULO_5_EI.pdf`: texto digital (teoría, materiales, cálculos).
-  - `MODULO_6.pdf` / `MODULO_6_1.pdf`: **reglamentación AEA 90364 escaneada** (mismo tamaño, probablemente duplicados).
+  - `MODULO_6.pdf`: **reglamentación AEA 90364 escaneada**. Usar este. (`MODULO_6_1.pdf` es un duplicado confirmado por el usuario: ignorarlo.)
   - `MODULO_7.pdf`.
 - Si el agente no tiene acceso a Drive, tiene que pedirle al usuario que copie los PDFs en `material/` (carpeta en `.gitignore`) o que dicte o fotografíe las tablas.
 
@@ -88,7 +88,6 @@ Por cada tabla: buscá en el Módulo 6 (o en los Módulos 1 a 5 si la reproducen
 - No hay PDFs ni texto extenso de la norma en el repo.
 
 ## Preguntas abiertas (hacerlas antes de empezar)
-- ¿`MODULO_6.pdf` y `MODULO_6_1.pdf` son el mismo archivo?
 - ¿Qué edición de la AEA 90364-7-770 usa el curso?
 - ¿Tensión de referencia monofásica 220 V o 230 V? ¿Y trifásica 380 V o 400 V?
 - ¿Hay ejercicios resueltos en los módulos? Pedir páginas (se usan como tests en la Fase 1).
