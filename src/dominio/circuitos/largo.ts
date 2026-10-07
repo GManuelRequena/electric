@@ -1,5 +1,6 @@
 import type { Circuito, Elemento, Proyecto } from "../proyecto/tipos";
 import { ES_TECLA } from "../proyecto/tipos";
+import { largoDesdePlano } from "./plano";
 
 /** Una boca es todo punto de utilización: luz, toma o artefacto fijo. Las teclas y lo enchufado no cuentan. */
 export function esBoca(e: Elemento): boolean {
@@ -20,8 +21,12 @@ export function estimarLargo(circuito: Circuito, p: Proyecto): number {
   return bocas * p.config.metrosPorBoca + p.config.metrosHastaTablero;
 }
 
-/** Largo a usar en el cálculo: el cargado a mano o, si no hay, el estimado (marcado como tal). */
-export function largoDeCircuito(circuito: Circuito, p: Proyecto): { largoM: number; estimado: boolean } {
-  if (circuito.largoM != null && circuito.largoM > 0) return { largoM: circuito.largoM, estimado: false };
-  return { largoM: estimarLargo(circuito, p), estimado: true };
+export type OrigenLargo = "manual" | "plano" | "estimado";
+
+/** Largo a usar en el cálculo: el cargado a mano, si no el medido sobre el plano y, si no, el estimado (marcado como tal). */
+export function largoDeCircuito(circuito: Circuito, p: Proyecto): { largoM: number; estimado: boolean; origen: OrigenLargo } {
+  if (circuito.largoM != null && circuito.largoM > 0) return { largoM: circuito.largoM, estimado: false, origen: "manual" };
+  const plano = largoDesdePlano(circuito.id, p);
+  if (plano) return { largoM: plano.largoM, estimado: false, origen: "plano" };
+  return { largoM: estimarLargo(circuito, p), estimado: true, origen: "estimado" };
 }

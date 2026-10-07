@@ -18,7 +18,7 @@ Una fase por sesión. Revisá el resultado en el celular antes de pasar a la sig
 - [x] [Fase 3: Presupuesto de materiales](fase-3-presupuesto.md)
 - [x] [Fase 4: IA (chat con la norma)](fase-4-ia.md)
 - [ ] [Fase 5: Extras y escalado](fase-5-extras.md)
-  - [ ] 5.A Plano en grilla
+  - [x] 5.A Plano en grilla
   - [ ] 5.B Otras secciones de la norma
   - [ ] 5.C Proveedor de precios real
   - [ ] 5.D Nube y multiusuario

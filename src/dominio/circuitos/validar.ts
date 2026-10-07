@@ -131,6 +131,9 @@ export function validarProyecto(p: Proyecto, norma: Norma = aea770): Hallazgo[] 
     if (c.largoEstimado) {
       hs.push({ severidad: "info", circuitoId: c.id, mensaje: `${c.id}: el largo es estimado; cargá el real para verificar la caída de tensión.` });
     }
+    if (c.largoDesdePlano) {
+      hs.push({ severidad: "info", circuitoId: c.id, mensaje: `${c.id}: el largo sale del plano (recorrido ortogonal); verificalo en obra.` });
+    }
     if (!r.cumple && !hs.some((h) => h.circuitoId === c.id && h.severidad === "error")) {
       hs.push({ ...base, severidad: "advertencia", mensaje: `${c.id}: el cálculo marca incumplimientos; revisá el detalle del circuito.` });
     }

@@ -72,6 +72,7 @@ export interface FichaCircuito {
   cargas: CargaInforme[];
   largoM: number;
   largoEstimado: boolean;
+  largoDesdePlano: boolean;
   potenciaTotalW?: number;
   corrienteA?: number;
   termica?: { calibreA: number; curva: string; capacidadCorteKa?: number };
@@ -172,7 +173,7 @@ export function armarInforme(p: Proyecto, o: OpcionesInforme): Informe {
 
   const fichas: FichaCircuito[] = p.circuitos.map((c) => {
     const r = c.resultado;
-    const { largoM, estimado } = largoDeCircuito(c, p);
+    const { largoM, estimado, origen } = largoDeCircuito(c, p);
     const fila = norma.tiposCircuito.filas.find((f) => f.tipo === c.tipo);
     const fuentes = new Map<string, Fuente>();
     r?.pasos.forEach((s) => s.fuente && fuentes.set(`${s.fuente.referencia}|${s.fuente.pagina ?? ""}`, s.fuente));
@@ -184,6 +185,7 @@ export function armarInforme(p: Proyecto, o: OpcionesInforme): Informe {
       cargas: cargasDe(p, c.id, c.tipo, norma),
       largoM,
       largoEstimado: estimado,
+      largoDesdePlano: origen === "plano",
       potenciaTotalW: r?.potenciaTotalW,
       corrienteA: r?.corrienteProyectoA,
       termica: r && { calibreA: r.termicaA, curva: r.curva, capacidadCorteKa: r.capacidadCorteKa },

@@ -1,5 +1,6 @@
 import { aea770, calcularCircuito, ErrorCalculo, type Artefacto, type Norma } from "../calculo";
 import { TENSION_MONOFASICA_V, type Circuito, type Proyecto } from "../proyecto/tipos";
+import { podarPlano } from "../proyecto/plano";
 import { asignarCircuitos } from "./asignar";
 import { elementosDeCircuito, esBoca, largoDeCircuito } from "./largo";
 
@@ -30,16 +31,18 @@ export function calcularCircuitoDeProyecto(c: Circuito, p: Proyecto, norma: Norm
   }
   if (artefactos.length === 0) return { ...c, resultado: undefined, error: "El circuito no tiene cargas." };
 
-  const { largoM, estimado } = largoDeCircuito(c, p);
+  const { largoM, estimado, origen } = largoDeCircuito(c, p);
+  const desdePlano = origen === "plano";
   try {
     const resultado = calcularCircuito(
       { sistema: "monofasico", tensionV, artefactos, tipoCircuito: c.tipo, largoM, metodoInstalacion: c.metodoInstalacion, material: "cobre" },
       norma,
     );
     if (estimado) resultado.advertencias.push(`El largo de ${largoM} m es una estimación (bocas × ${p.config.metrosPorBoca} m + ${p.config.metrosHastaTablero} m hasta el tablero); cargá el largo real.`);
-    return { ...c, largoEstimado: estimado, resultado, error: undefined };
+    if (desdePlano) resultado.advertencias.push(`El largo de ${largoM} m se midió sobre el plano (recorrido ortogonal desde el tablero por las bocas, con subida y bajada); verificalo en obra.`);
+    return { ...c, largoEstimado: estimado, largoDesdePlano: desdePlano, resultado, error: undefined };
   } catch (e) {
-    if (e instanceof ErrorCalculo) return { ...c, largoEstimado: estimado, resultado: undefined, error: e.message };
+    if (e instanceof ErrorCalculo) return { ...c, largoEstimado: estimado, largoDesdePlano: desdePlano, resultado: undefined, error: e.message };
     throw e;
   }
 }
@@ -50,5 +53,5 @@ export function calcularCircuitosProyecto(p: Proyecto, norma: Norma = aea770): P
 
 /** Asigna y calcula: lo que se corre al cambiar cualquier elemento. */
 export function recalcularProyecto(p: Proyecto, norma: Norma = aea770): Proyecto {
-  return calcularCircuitosProyecto(asignarCircuitos(p, norma), norma);
+  return calcularCircuitosProyecto(asignarCircuitos(podarPlano(p), norma), norma);
 }
