@@ -1,0 +1,57 @@
+{
+  "id": "aea770.diferenciales",
+  "titulo": "Interruptores diferenciales",
+  "fuente": {
+    "norma": "AEA 90364-7-770",
+    "edicion": "2017",
+    "referencia": "Cl. 770.9 y Guía AEA 770",
+    "documento": "MODULO_6.pdf",
+    "pagina": 44
+  },
+  "verificado": false,
+  "nota": "Esquema TT. Capacidad de ruptura del ID: 10 veces la corriente de paso o 500 A, el mayor. Resistencia de PAT máxima: 40 Ω (Guía p. 33, no normativo hasta verificar).",
+  "filas": [
+    {
+      "sensibilidadMaxMa": 30,
+      "uso": "Protección de personas (contacto directo e indirecto)",
+      "obligatorio": true,
+      "alcance": "Todo circuito terminal de iluminación o tomacorrientes",
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Guía AEA 770",
+        "documento": "MODULO_6.pdf",
+        "pagina": 44
+      },
+      "verificado": false
+    },
+    {
+      "sensibilidadMaxMa": 300,
+      "uso": "Solo contactos indirectos e incendio por fugas (recomendado selectivo)",
+      "obligatorio": false,
+      "alcance": "Sensibilidad > 30 mA y hasta 300 mA inclusive",
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Guía AEA 770",
+        "documento": "MODULO_6.pdf",
+        "pagina": 44
+      },
+      "verificado": false
+    },
+    {
+      "sensibilidadMaxMa": 30,
+      "uso": "Bañera de hidromasaje: diferencial exclusivo",
+      "obligatorio": true,
+      "alcance": "Circuito independiente de la bañera",
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Cl. 770.7 / 701",
+        "documento": "MODULO_6.pdf",
+        "pagina": 37
+      },
+      "verificado": false
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "aea770.calibresNormalizados",
+  "titulo": "Calibres normalizados de interruptores automáticos (PIA)",
+  "fuente": {
+    "norma": "AEA 90364-7-770",
+    "edicion": "2017",
+    "referencia": "IEC 60898-1 (valores preferidos)",
+    "documento": "MODULO_6.pdf"
+  },
+  "verificado": false,
+  "nota": "Página de la Guía AEA 770 (Módulo 6) impresa en el pie; el número de página del PDF puede diferir. ",
+  "filas": [
+    {
+      "calibreA": 6,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "IEC 60898-1",
+        "documento": "MODULO_6.pdf"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Serie normalizada cargada sin cita de página de la Guía (la Guía solo nombra 10, 15, 16, 20, 25, 32 y 40 A); confirmar contra el Módulo 6."
+    },
+    {
+      "calibreA": 10,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "IEC 60898-1",
+        "documento": "MODULO_6.pdf"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Serie normalizada cargada sin cita de página de la Guía (la Guía solo nombra 10, 15, 16, 20, 25, 32 y 40 A); confirmar contra el Módulo 6."
+    },
+    {
+      "calibreA": 16,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "IEC 60898-1",
+        "documento": "MODULO_6.pdf"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Serie normalizada cargada sin cita de página de la Guía (la Guía solo nombra 10, 15, 16, 20, 25, 32 y 40 A); confirmar contra el Módulo 6."
+    },
+    {
+      "calibreA": 20,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "IEC 60898-1",
+        "documento": "MODULO_6.pdf"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Serie normalizada cargada sin cita de página de la Guía (la Guía solo nombra 10, 15, 16, 20, 25, 32 y 40 A); confirmar contra el Módulo 6."
+    },
+    {
+      "calibreA": 25,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "IEC 60898-1",
+        "documento": "MODULO_6.pdf"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Serie normalizada cargada sin cita de página de la Guía (la Guía solo nombra 10, 15, 16, 20, 25, 32 y 40 A); confirmar contra el Módulo 6."
+    },
+    {
+      "calibreA": 32,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "IEC 60898-1",
+        "documento": "MODULO_6.pdf"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Serie normalizada cargada sin cita de página de la Guía (la Guía solo nombra 10, 15, 16, 20, 25, 32 y 40 A); confirmar contra el Módulo 6."
+    },
+    {
+      "calibreA": 40,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "IEC 60898-1",
+        "documento": "MODULO_6.pdf"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Serie normalizada cargada sin cita de página de la Guía (la Guía solo nombra 10, 15, 16, 20, 25, 32 y 40 A); confirmar contra el Módulo 6."
+    },
+    {
+      "calibreA": 50,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "IEC 60898-1",
+        "documento": "MODULO_6.pdf"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Serie normalizada cargada sin cita de página de la Guía (la Guía solo nombra 10, 15, 16, 20, 25, 32 y 40 A); confirmar contra el Módulo 6."
+    },
+    {
+      "calibreA": 63,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "IEC 60898-1",
+        "documento": "MODULO_6.pdf"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Serie normalizada cargada sin cita de página de la Guía (la Guía solo nombra 10, 15, 16, 20, 25, 32 y 40 A); confirmar contra el Módulo 6."
+    }
+  ]
+}

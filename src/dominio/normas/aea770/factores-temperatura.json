@@ -1,0 +1,113 @@
+{
+  "id": "aea770.factoresTemperatura",
+  "titulo": "Factor de corrección por temperatura ambiente",
+  "fuente": {
+    "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+    "edicion": "s/d",
+    "referencia": "Tabla Nº 46",
+    "documento": "MODULO_4_EI.pdf",
+    "pagina": 306
+  },
+  "verificado": false,
+  "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Temperatura de referencia 40 °C (valores relativos a ella).",
+  "filas": [
+    {
+      "temperaturaAmbienteC": 25,
+      "factorEnCanos": 1.33,
+      "factorAlAire": 1.21,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 46",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 306
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). "
+    },
+    {
+      "temperaturaAmbienteC": 30,
+      "factorEnCanos": 1.22,
+      "factorAlAire": 1.15,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 46",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 306
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). "
+    },
+    {
+      "temperaturaAmbienteC": 35,
+      "factorEnCanos": 1.13,
+      "factorAlAire": 1.08,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 46",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 306
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). "
+    },
+    {
+      "temperaturaAmbienteC": 40,
+      "factorEnCanos": 1,
+      "factorAlAire": 1,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 46",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 306
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). "
+    },
+    {
+      "temperaturaAmbienteC": 45,
+      "factorEnCanos": 0.86,
+      "factorAlAire": 0.92,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 46",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 306
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). "
+    },
+    {
+      "temperaturaAmbienteC": 50,
+      "factorEnCanos": 0.72,
+      "factorAlAire": 0.83,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 46",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 306
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). "
+    },
+    {
+      "temperaturaAmbienteC": 55,
+      "factorEnCanos": 0.5,
+      "factorAlAire": 0.72,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 46",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 306
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). "
+    }
+  ]
+}

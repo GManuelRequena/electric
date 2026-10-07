@@ -1,0 +1,57 @@
+{
+  "id": "aea770.curvasDisparo",
+  "titulo": "Curvas de disparo instantáneo de PIA",
+  "fuente": {
+    "norma": "AEA 90364-7-770",
+    "edicion": "2017",
+    "referencia": "IEC 60898-1; Guía AEA 770",
+    "documento": "MODULO_6.pdf",
+    "pagina": 44
+  },
+  "verificado": false,
+  "nota": "El uso típico es orientativo según la Guía (\"primera aproximación\").",
+  "filas": [
+    {
+      "curva": "B",
+      "minMultiploIn": 3,
+      "maxMultiploIn": 5,
+      "usoTipico": "Circuitos IUG",
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Guía AEA 770",
+        "documento": "MODULO_6.pdf",
+        "pagina": 44
+      },
+      "verificado": false
+    },
+    {
+      "curva": "C",
+      "minMultiploIn": 5,
+      "maxMultiploIn": 10,
+      "usoTipico": "Circuitos TUG y TUE",
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Guía AEA 770",
+        "documento": "MODULO_6.pdf",
+        "pagina": 44
+      },
+      "verificado": false
+    },
+    {
+      "curva": "D",
+      "minMultiploIn": 10,
+      "maxMultiploIn": 20,
+      "usoTipico": "Tableros principales o cargas fuertemente capacitivas",
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Guía AEA 770",
+        "documento": "MODULO_6.pdf",
+        "pagina": 44
+      },
+      "verificado": false
+    }
+  ]
+}

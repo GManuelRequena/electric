@@ -1,0 +1,99 @@
+{
+  "id": "aea770.seccionesMinimas",
+  "titulo": "Secciones mínimas de conductores de cobre",
+  "fuente": {
+    "norma": "AEA 90364-7-770",
+    "edicion": "2017",
+    "referencia": "Tabla 770.11.1; Cl. 770.14.4.4 y 770.10.3.8.2",
+    "documento": "MODULO_6.pdf",
+    "pagina": 41
+  },
+  "verificado": false,
+  "nota": "Página de la Guía AEA 770 (Módulo 6) impresa en el pie; el número de página del PDF puede diferir. PE de tablero seccional: igual a la sección de los conductores del circuito seccional (S ≤ 16: S; 16 < S ≤ 35: 16; S > 35: S/2). Línea principal y seccional: sección por cálculo (Tabla 770.12.I).",
+  "filas": [
+    {
+      "uso": "IUG",
+      "seccionMinMm2": 1.5,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tabla 770.11.1",
+        "documento": "MODULO_6.pdf",
+        "pagina": 41
+      },
+      "verificado": false
+    },
+    {
+      "uso": "IUG con tomacorrientes derivados",
+      "seccionMinMm2": 2.5,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tabla 770.11.1",
+        "documento": "MODULO_6.pdf",
+        "pagina": 41
+      },
+      "verificado": false
+    },
+    {
+      "uso": "TUG",
+      "seccionMinMm2": 2.5,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tabla 770.11.1",
+        "documento": "MODULO_6.pdf",
+        "pagina": 22
+      },
+      "verificado": false
+    },
+    {
+      "uso": "TUE",
+      "seccionMinMm2": 2.5,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tabla 770.11.1",
+        "documento": "MODULO_6.pdf",
+        "pagina": 41
+      },
+      "verificado": false
+    },
+    {
+      "uso": "IUE",
+      "seccionMinMm2": 2.5,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tabla 770.11.1",
+        "documento": "MODULO_6.pdf",
+        "pagina": 41
+      },
+      "verificado": false
+    },
+    {
+      "uso": "PAT (puesta a tierra)",
+      "seccionMinMm2": 4,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Cl. 770.14.4.4",
+        "documento": "MODULO_6.pdf",
+        "pagina": 41
+      },
+      "verificado": false
+    },
+    {
+      "uso": "PE de circuitos terminales",
+      "seccionMinMm2": 2.5,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Cl. 770.14.1",
+        "documento": "MODULO_6.pdf",
+        "pagina": 27
+      },
+      "verificado": false
+    }
+  ]
+}

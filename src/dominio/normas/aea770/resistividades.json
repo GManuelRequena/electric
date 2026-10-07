@@ -1,0 +1,66 @@
+{
+  "id": "aea770.resistividades",
+  "titulo": "Resistividad de los conductores",
+  "fuente": {
+    "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+    "edicion": "s/d",
+    "referencia": "Tabla Nº 15 (Módulo 2); texto 3.1 (Módulo 3)",
+    "documento": "MODULO_2_EI.pdf / MODULO_3_EI.pdf"
+  },
+  "verificado": false,
+  "nota": "Datos del curso. Para la caída de tensión (Fase 1) verificar qué resistividad/temperatura exige la norma.",
+  "filas": [
+    {
+      "material": "cobre",
+      "temperaturaC": 15,
+      "resistividadOhmMm2PorM": 0.0175,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 15",
+        "documento": "MODULO_2_EI.pdf"
+      },
+      "verificado": false,
+      "nota": "Valor del curso, referido a 15 °C. PENDIENTE_VERIFICAR: no es el valor de servicio a 70 °C que usa la norma."
+    },
+    {
+      "material": "aluminio",
+      "temperaturaC": 15,
+      "resistividadOhmMm2PorM": 0.026,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 15",
+        "documento": "MODULO_2_EI.pdf"
+      },
+      "verificado": false,
+      "nota": "Valor del curso, referido a 15 °C. PENDIENTE_VERIFICAR: no es el valor de servicio."
+    },
+    {
+      "material": "cobre",
+      "temperaturaC": null,
+      "resistividadOhmMm2PorM": 0.017241,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Sección 3.1 (17,241 Ω·mm²/km)",
+        "documento": "MODULO_3_EI.pdf"
+      },
+      "verificado": false,
+      "nota": "Temperatura de referencia no indicada en el texto (probablemente 20 °C). PENDIENTE_VERIFICAR: confirmar."
+    },
+    {
+      "material": "aluminio",
+      "temperaturaC": null,
+      "resistividadOhmMm2PorM": 0.028264,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Sección 3.1 (28,264 Ω·mm²/km)",
+        "documento": "MODULO_3_EI.pdf"
+      },
+      "verificado": false,
+      "nota": "Temperatura de referencia no indicada. PENDIENTE_VERIFICAR: confirmar."
+    }
+  ]
+}

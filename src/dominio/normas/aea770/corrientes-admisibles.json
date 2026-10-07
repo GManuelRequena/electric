@@ -1,0 +1,303 @@
+{
+  "id": "aea770.corrientesAdmisibles",
+  "titulo": "Corrientes admisibles (Iz) de conductores de cobre IRAM NM 247-3 en cañería",
+  "fuente": {
+    "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+    "edicion": "s/d",
+    "referencia": "Tabla Nº 45",
+    "documento": "MODULO_4_EI.pdf",
+    "pagina": 305
+  },
+  "verificado": false,
+  "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Reemplazar por la Tabla 770.12.I de la reglamentación 2017 cuando esté disponible. Los valores del Módulo 4 se leyeron de un OCR de dos columnas; verificar contra el PDF.",
+  "filas": [
+    {
+      "metodo": "canerias-embutidas-o-a-la-vista-40C-3-cables",
+      "material": "cobre",
+      "conductoresCargados": 3,
+      "seccionMm2": 1,
+      "corrienteAdmisibleA": 9.6,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 45",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 305
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Cable IRAM NM 247-3 en cañería, 40 °C ambiente, 70 °C en conductor, tres cables por caño."
+    },
+    {
+      "metodo": "canerias-embutidas-o-a-la-vista-40C-3-cables",
+      "material": "cobre",
+      "conductoresCargados": 3,
+      "seccionMm2": 1.5,
+      "corrienteAdmisibleA": 14,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 45",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 305
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Cable IRAM NM 247-3 en cañería, 40 °C ambiente, 70 °C en conductor, tres cables por caño."
+    },
+    {
+      "metodo": "canerias-embutidas-o-a-la-vista-40C-3-cables",
+      "material": "cobre",
+      "conductoresCargados": 3,
+      "seccionMm2": 2.5,
+      "corrienteAdmisibleA": 18,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 45",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 305
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Cable IRAM NM 247-3 en cañería, 40 °C ambiente, 70 °C en conductor, tres cables por caño."
+    },
+    {
+      "metodo": "canerias-embutidas-o-a-la-vista-40C-3-cables",
+      "material": "cobre",
+      "conductoresCargados": 3,
+      "seccionMm2": 4,
+      "corrienteAdmisibleA": 25,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 45",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 305
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Cable IRAM NM 247-3 en cañería, 40 °C ambiente, 70 °C en conductor, tres cables por caño."
+    },
+    {
+      "metodo": "canerias-embutidas-o-a-la-vista-40C-3-cables",
+      "material": "cobre",
+      "conductoresCargados": 3,
+      "seccionMm2": 6,
+      "corrienteAdmisibleA": 32,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 45",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 305
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Cable IRAM NM 247-3 en cañería, 40 °C ambiente, 70 °C en conductor, tres cables por caño."
+    },
+    {
+      "metodo": "canerias-embutidas-o-a-la-vista-40C-3-cables",
+      "material": "cobre",
+      "conductoresCargados": 3,
+      "seccionMm2": 10,
+      "corrienteAdmisibleA": 44,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 45",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 305
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Cable IRAM NM 247-3 en cañería, 40 °C ambiente, 70 °C en conductor, tres cables por caño."
+    },
+    {
+      "metodo": "canerias-embutidas-o-a-la-vista-40C-3-cables",
+      "material": "cobre",
+      "conductoresCargados": 3,
+      "seccionMm2": 16,
+      "corrienteAdmisibleA": 59,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 45",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 305
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Cable IRAM NM 247-3 en cañería, 40 °C ambiente, 70 °C en conductor, tres cables por caño."
+    },
+    {
+      "metodo": "canerias-embutidas-o-a-la-vista-40C-3-cables",
+      "material": "cobre",
+      "conductoresCargados": 3,
+      "seccionMm2": 25,
+      "corrienteAdmisibleA": 77,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 45",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 305
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Cable IRAM NM 247-3 en cañería, 40 °C ambiente, 70 °C en conductor, tres cables por caño."
+    },
+    {
+      "metodo": "canerias-embutidas-o-a-la-vista-40C-3-cables",
+      "material": "cobre",
+      "conductoresCargados": 3,
+      "seccionMm2": 35,
+      "corrienteAdmisibleA": 96,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 45",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 305
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Cable IRAM NM 247-3 en cañería, 40 °C ambiente, 70 °C en conductor, tres cables por caño."
+    },
+    {
+      "metodo": "canerias-embutidas-o-a-la-vista-40C-3-cables",
+      "material": "cobre",
+      "conductoresCargados": 3,
+      "seccionMm2": 50,
+      "corrienteAdmisibleA": 117,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 45",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 305
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Cable IRAM NM 247-3 en cañería, 40 °C ambiente, 70 °C en conductor, tres cables por caño."
+    },
+    {
+      "metodo": "canerias-embutidas-o-a-la-vista-40C-3-cables",
+      "material": "cobre",
+      "conductoresCargados": 3,
+      "seccionMm2": 70,
+      "corrienteAdmisibleA": 149,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 45",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 305
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Cable IRAM NM 247-3 en cañería, 40 °C ambiente, 70 °C en conductor, tres cables por caño."
+    },
+    {
+      "metodo": "canerias-embutidas-o-a-la-vista-40C-3-cables",
+      "material": "cobre",
+      "conductoresCargados": 3,
+      "seccionMm2": 95,
+      "corrienteAdmisibleA": 180,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 45",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 305
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Cable IRAM NM 247-3 en cañería, 40 °C ambiente, 70 °C en conductor, tres cables por caño."
+    },
+    {
+      "metodo": "canerias-embutidas-o-a-la-vista-40C-3-cables",
+      "material": "cobre",
+      "conductoresCargados": 3,
+      "seccionMm2": 120,
+      "corrienteAdmisibleA": 208,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 45",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 305
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Cable IRAM NM 247-3 en cañería, 40 °C ambiente, 70 °C en conductor, tres cables por caño."
+    },
+    {
+      "metodo": "canerias-embutidas-o-a-la-vista-40C-3-cables",
+      "material": "cobre",
+      "conductoresCargados": 3,
+      "seccionMm2": 150,
+      "corrienteAdmisibleA": 228,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 45",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 305
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Cable IRAM NM 247-3 en cañería, 40 °C ambiente, 70 °C en conductor, tres cables por caño."
+    },
+    {
+      "metodo": "canerias-embutidas-o-a-la-vista-40C-3-cables",
+      "material": "cobre",
+      "conductoresCargados": 3,
+      "seccionMm2": 185,
+      "corrienteAdmisibleA": 258,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 45",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 305
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Cable IRAM NM 247-3 en cañería, 40 °C ambiente, 70 °C en conductor, tres cables por caño."
+    },
+    {
+      "metodo": "canerias-embutidas-o-a-la-vista-40C-3-cables",
+      "material": "cobre",
+      "conductoresCargados": 3,
+      "seccionMm2": 240,
+      "corrienteAdmisibleA": 301,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 45",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 305
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Cable IRAM NM 247-3 en cañería, 40 °C ambiente, 70 °C en conductor, tres cables por caño."
+    },
+    {
+      "metodo": "canerias-embutidas-o-a-la-vista-40C-3-cables",
+      "material": "cobre",
+      "conductoresCargados": 3,
+      "seccionMm2": 300,
+      "corrienteAdmisibleA": 343,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 45",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 305
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Cable IRAM NM 247-3 en cañería, 40 °C ambiente, 70 °C en conductor, tres cables por caño."
+    },
+    {
+      "metodo": "canerias-embutidas-o-a-la-vista-40C-3-cables",
+      "material": "cobre",
+      "conductoresCargados": 3,
+      "seccionMm2": 400,
+      "corrienteAdmisibleA": 385,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 45",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 305
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Cable IRAM NM 247-3 en cañería, 40 °C ambiente, 70 °C en conductor, tres cables por caño."
+    }
+  ]
+}

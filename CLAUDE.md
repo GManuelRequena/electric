@@ -15,6 +15,10 @@ El plan completo está en `docs/plan/`. Leé `docs/plan/00-vision.md` y la fase 
 6. **Aviso legal visible**: "Herramienta de estudio. No reemplaza el criterio profesional ni la firma de un instalador habilitado."
 7. **Escalable por módulos**: lo normativo va en un módulo por sección (`normas/aea770`, en el futuro `aea771`, `aea718`...). El motor no conoce valores concretos, recibe las tablas.
 
+## Fuente de verdad normativa
+
+La referencia es la **Guía AEA 770, edición 2017** (`MODULO_6.pdf`). Si el curso (Módulos 1 a 5) difiere, manda la Guía. Los datos del curso solo se cargan como respaldo con `verificado: false`. Ver `docs/plan/pendientes.md`.
+
 ## Stack
 
 - Next.js (App Router) + TypeScript `strict` + Tailwind CSS, como PWA.

@@ -1,0 +1,51 @@
+{
+  "id": "aea770.coeficientesSimultaneidad",
+  "titulo": "Coeficientes de simultaneidad para la DPMS",
+  "fuente": {
+    "norma": "AEA 90364-7-770",
+    "edicion": "2017",
+    "referencia": "Tabla 770.8.I",
+    "documento": "MODULO_6.pdf",
+    "pagina": 22
+  },
+  "verificado": false,
+  "nota": "Página de la Guía AEA 770 (Módulo 6) impresa en el pie; el número de página del PDF puede diferir. Ejemplo de la Guía (p. 27): IUG 15 bocas × 60 VA × 2/3 = 600 VA; TUG 2200 VA; total DPMS 5000 VA.",
+  "filas": [
+    {
+      "tipoCircuito": "IUG",
+      "factor": 0.6666666666666666,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tabla 770.8.I",
+        "documento": "MODULO_6.pdf",
+        "pagina": 22
+      },
+      "verificado": false
+    },
+    {
+      "tipoCircuito": "TUG",
+      "factor": 1,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tabla 770.8.I",
+        "documento": "MODULO_6.pdf",
+        "pagina": 22
+      },
+      "verificado": false
+    },
+    {
+      "tipoCircuito": "TUE",
+      "factor": 1,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tabla 770.8.I",
+        "documento": "MODULO_6.pdf",
+        "pagina": 22
+      },
+      "verificado": false
+    }
+  ]
+}
