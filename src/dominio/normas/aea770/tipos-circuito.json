@@ -1,0 +1,235 @@
+{
+  "id": "aea770.tiposCircuito",
+  "titulo": "Tipos de circuito: bocas, potencia, protección y sección",
+  "fuente": {
+    "norma": "AEA 90364-7-770",
+    "edicion": "2017",
+    "referencia": "Tablas 770.6.I, 770.8.I y 770.11.1; Cl. 770.6.6",
+    "documento": "MODULO_6.pdf",
+    "pagina": 22
+  },
+  "verificado": false,
+  "nota": "Página de la Guía AEA 770 (Módulo 6) impresa en el pie; el número de página del PDF puede diferir. Transcripto de la Guía AEA 770; los circuitos ITE no se usan en viviendas.",
+  "filas": [
+    {
+      "tipo": "IUG",
+      "nombre": "Iluminación de uso general",
+      "alimentacion": "monofasica",
+      "maxBocas": 15,
+      "potenciaPorBocaVA": 60,
+      "potenciaPorCircuitoVA": null,
+      "factorSimultaneidad": 0.6666666666666666,
+      "calibreMaxProteccionA": 16,
+      "seccionMinMm2": 1.5,
+      "corrientePorBocaMaxA": 10,
+      "admiteTomacorrientes": true,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tablas 770.6.I, 770.8.I y 770.11.1; Cl. 770.6.6 a) I",
+        "documento": "MODULO_6.pdf",
+        "pagina": 22
+      },
+      "verificado": false,
+      "nota": "60 VA por boca o el valor real si fuera superior. Si se derivan tomacorrientes del circuito IUG, pasa a DPMS 2200 VA y sección 2,5 mm² (ver secciones-minimas)."
+    },
+    {
+      "tipo": "TUG",
+      "nombre": "Tomacorrientes de uso general",
+      "alimentacion": "monofasica",
+      "maxBocas": 15,
+      "potenciaPorBocaVA": null,
+      "potenciaPorCircuitoVA": 2200,
+      "factorSimultaneidad": 1,
+      "calibreMaxProteccionA": 20,
+      "seccionMinMm2": 2.5,
+      "corrientePorBocaMaxA": 10,
+      "admiteTomacorrientes": true,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tablas 770.6.I, 770.8.I y 770.11.1; Cl. 770.6.6 a) II",
+        "documento": "MODULO_6.pdf",
+        "pagina": 22
+      },
+      "verificado": false,
+      "nota": "2200 VA por circuito o el valor real si fuera superior. Máximo 2 módulos de tomacorriente en caja de 50x100 mm."
+    },
+    {
+      "tipo": "TUE",
+      "nombre": "Tomacorrientes de uso especial",
+      "alimentacion": "monofasica",
+      "maxBocas": 15,
+      "potenciaPorBocaVA": null,
+      "potenciaPorCircuitoVA": 3300,
+      "factorSimultaneidad": 1,
+      "calibreMaxProteccionA": 32,
+      "seccionMinMm2": 2.5,
+      "corrientePorBocaMaxA": 20,
+      "admiteTomacorrientes": true,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tablas 770.8.I y 770.11.1; Cl. 770.6.6 b)",
+        "documento": "MODULO_6.pdf",
+        "pagina": 23
+      },
+      "verificado": false,
+      "nota": "Consumos unitarios > 10 A y hasta 20 A, e instalaciones a la intemperie."
+    },
+    {
+      "tipo": "IUE",
+      "nombre": "Iluminación de uso especial",
+      "alimentacion": "monofasica",
+      "maxBocas": null,
+      "potenciaPorBocaVA": null,
+      "potenciaPorCircuitoVA": null,
+      "factorSimultaneidad": null,
+      "calibreMaxProteccionA": null,
+      "seccionMinMm2": 2.5,
+      "corrientePorBocaMaxA": null,
+      "admiteTomacorrientes": false,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Sección 771; Tabla 770.11.1",
+        "documento": "MODULO_6.pdf",
+        "pagina": 23
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: La Guía solo describe el IUE (Sección 771) sin cifras; faltan bocas máx., potencia y calibre. Sección mín. 2,5 mm² según esquema de secciones (p. 41)."
+    },
+    {
+      "tipo": "MBTF",
+      "nombre": "Muy baja tensión funcional",
+      "alimentacion": "monofasica",
+      "maxBocas": 15,
+      "potenciaPorBocaVA": null,
+      "potenciaPorCircuitoVA": null,
+      "factorSimultaneidad": null,
+      "calibreMaxProteccionA": 20,
+      "seccionMinMm2": null,
+      "corrientePorBocaMaxA": 10,
+      "admiteTomacorrientes": false,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Sección 771 (tabla de circuitos de uso específico)",
+        "documento": "MODULO_6.pdf",
+        "pagina": 24
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Tabla de la Guía con OCR parcial: confirmar contra el PDF."
+    },
+    {
+      "tipo": "APM",
+      "nombre": "Alimentación de pequeños motores",
+      "alimentacion": "monofasica",
+      "maxBocas": 15,
+      "potenciaPorBocaVA": null,
+      "potenciaPorCircuitoVA": null,
+      "factorSimultaneidad": null,
+      "calibreMaxProteccionA": 25,
+      "seccionMinMm2": null,
+      "corrientePorBocaMaxA": 10,
+      "admiteTomacorrientes": false,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Sección 771 (tabla de circuitos de uso específico)",
+        "documento": "MODULO_6.pdf",
+        "pagina": 24
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Tabla de la Guía con OCR parcial: confirmar contra el PDF."
+    },
+    {
+      "tipo": "ATE",
+      "nombre": "Alimentación de tensión estabilizada",
+      "alimentacion": "monofasica",
+      "maxBocas": 15,
+      "potenciaPorBocaVA": null,
+      "potenciaPorCircuitoVA": null,
+      "factorSimultaneidad": null,
+      "calibreMaxProteccionA": null,
+      "seccionMinMm2": null,
+      "corrientePorBocaMaxA": null,
+      "admiteTomacorrientes": false,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Sección 771 (tabla de circuitos de uso específico)",
+        "documento": "MODULO_6.pdf",
+        "pagina": 24
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Calibre: responsabilidad del proyectista según la Guía; confirmar."
+    },
+    {
+      "tipo": "MBTS",
+      "nombre": "Muy baja tensión de seguridad",
+      "alimentacion": "monofasica",
+      "maxBocas": null,
+      "potenciaPorBocaVA": null,
+      "potenciaPorCircuitoVA": null,
+      "factorSimultaneidad": null,
+      "calibreMaxProteccionA": null,
+      "seccionMinMm2": null,
+      "corrientePorBocaMaxA": null,
+      "admiteTomacorrientes": false,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Sección 771",
+        "documento": "MODULO_6.pdf",
+        "pagina": 24
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Sin límite de bocas; calibre y sección a cargo del proyectista. Confirmar."
+    },
+    {
+      "tipo": "ACU",
+      "nombre": "Alimentación de carga única",
+      "alimentacion": "monofasica",
+      "maxBocas": 1,
+      "potenciaPorBocaVA": null,
+      "potenciaPorCircuitoVA": null,
+      "factorSimultaneidad": null,
+      "calibreMaxProteccionA": null,
+      "seccionMinMm2": null,
+      "corrientePorBocaMaxA": null,
+      "admiteTomacorrientes": false,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Sección 771",
+        "documento": "MODULO_6.pdf",
+        "pagina": 24
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Carga unitaria sin derivación; límites a cargo del proyectista. Confirmar."
+    },
+    {
+      "tipo": "OCE",
+      "nombre": "Otros circuitos específicos",
+      "alimentacion": "monofasica",
+      "maxBocas": null,
+      "potenciaPorBocaVA": null,
+      "potenciaPorCircuitoVA": null,
+      "factorSimultaneidad": null,
+      "calibreMaxProteccionA": null,
+      "seccionMinMm2": null,
+      "corrientePorBocaMaxA": null,
+      "admiteTomacorrientes": false,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Sección 771",
+        "documento": "MODULO_6.pdf",
+        "pagina": 24
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Cargas no comprendidas en las anteriores. Confirmar."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "aea770.corrientesAdmisibles",
+  "titulo": "Corrientes admisibles (Iz) de conductores",
+  "fuente": {
+    "norma": "AEA 90364-7-770",
+    "edicion": "2017",
+    "referencia": "Tablas 770.12.I y 770.12.III",
+    "documento": "MODULO_6.pdf",
+    "pagina": 42
+  },
+  "verificado": false,
+  "nota": "Página de la Guía AEA 770 (Módulo 6) impresa en el pie; el número de página del PDF puede diferir. PENDIENTE_VERIFICAR: La Guía no reproduce los valores de Iz (Tabla 770.12.I método B1 cañería embutida/a la vista, Tabla 770.12.III enterrados D1/D2). Cargarlos del texto de la reglamentación o pedirlos al usuario. Temperatura ambiente de referencia: 40 °C (ENRE); otras: AEA 90364-5-52 Anexo B.",
+  "filas": []
+}

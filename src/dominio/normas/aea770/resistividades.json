@@ -1,0 +1,13 @@
+{
+  "id": "aea770.resistividades",
+  "titulo": "Resistividad de los conductores a temperatura de servicio",
+  "fuente": {
+    "norma": "AEA 90364-7-770",
+    "edicion": "2017",
+    "referencia": "A definir",
+    "documento": "MODULO_6.pdf"
+  },
+  "verificado": false,
+  "nota": "PENDIENTE_VERIFICAR: No figura en la Guía. Cargar desde el Módulo de teoría del curso o la norma; no usar valores de memoria.",
+  "filas": []
+}

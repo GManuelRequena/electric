@@ -1,0 +1,41 @@
+{
+  "id": "aea770.factoresAgrupamiento",
+  "titulo": "Factores de reducción por agrupamiento",
+  "fuente": {
+    "norma": "AEA 90364-7-770",
+    "edicion": "2017",
+    "referencia": "Tabla 770.12.II; Cl. 770.10.3.8.2",
+    "documento": "MODULO_6.pdf",
+    "pagina": 41
+  },
+  "verificado": false,
+  "nota": "Página de la Guía AEA 770 (Módulo 6) impresa en el pie; el número de página del PDF puede diferir. ",
+  "filas": [
+    {
+      "circuitosPorCano": 2,
+      "factor": 0.8,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Cl. 770.10.3.8.2",
+        "documento": "MODULO_6.pdf",
+        "pagina": 41
+      },
+      "verificado": false,
+      "nota": "Para circuitos de usos generales."
+    },
+    {
+      "circuitosPorCano": 3,
+      "factor": 0.7,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Cl. 770.10.3.8.2",
+        "documento": "MODULO_6.pdf",
+        "pagina": 41
+      },
+      "verificado": false,
+      "nota": "Para circuitos de usos generales, máximo 3 por caño."
+    }
+  ]
+}

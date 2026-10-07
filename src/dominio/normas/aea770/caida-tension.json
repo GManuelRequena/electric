@@ -1,0 +1,51 @@
+{
+  "id": "aea770.caidaTension",
+  "titulo": "Caída de tensión máxima admitida",
+  "fuente": {
+    "norma": "AEA 90364-7-770",
+    "edicion": "2017",
+    "referencia": "Cl. 770.15.6",
+    "documento": "MODULO_6.pdf",
+    "pagina": 41
+  },
+  "verificado": false,
+  "nota": "Página de la Guía AEA 770 (Módulo 6) impresa en el pie; el número de página del PDF puede diferir. PENDIENTE_VERIFICAR: La Guía no desglosa por tramo (línea principal / terminal / total); confirmar si la norma lo hace.",
+  "filas": [
+    {
+      "caso": "Iluminación, servicio normal",
+      "maxPorcentaje": 3,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Cl. 770.15.6",
+        "documento": "MODULO_6.pdf",
+        "pagina": 41
+      },
+      "verificado": false
+    },
+    {
+      "caso": "Otras cargas, servicio normal",
+      "maxPorcentaje": 5,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Cl. 770.15.6",
+        "documento": "MODULO_6.pdf",
+        "pagina": 41
+      },
+      "verificado": false
+    },
+    {
+      "caso": "Otras cargas, arranque o conexión (transitorio)",
+      "maxPorcentaje": 15,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Cl. 770.15.6",
+        "documento": "MODULO_6.pdf",
+        "pagina": 41
+      },
+      "verificado": false
+    }
+  ]
+}

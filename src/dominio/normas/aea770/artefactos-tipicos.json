@@ -1,0 +1,13 @@
+{
+  "id": "aea770.artefactosTipicos",
+  "titulo": "Artefactos típicos (no normativo)",
+  "fuente": {
+    "norma": "AEA 90364-7-770",
+    "edicion": "2017",
+    "referencia": "Curso / usuario",
+    "documento": "MODULO_6.pdf"
+  },
+  "verificado": false,
+  "nota": "No normativo. PENDIENTE: cargar desde los Módulos 1 a 5 del curso o que lo dicte el usuario.",
+  "filas": []
+}

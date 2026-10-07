@@ -1,0 +1,75 @@
+{
+  "id": "aea770.gradosElectrificacion",
+  "titulo": "Grados de electrificación de viviendas",
+  "fuente": {
+    "norma": "AEA 90364-7-770",
+    "edicion": "2017",
+    "referencia": "Cl. 770.7 (Grados de Electrificación)",
+    "documento": "MODULO_6.pdf",
+    "pagina": 6
+  },
+  "verificado": false,
+  "nota": "Página de la Guía AEA 770 (Módulo 6) impresa en el pie; el número de página del PDF puede diferir. Sla = superficie cubierta + 50% de la semicubierta.",
+  "filas": [
+    {
+      "grado": "minimo",
+      "slaMinM2": null,
+      "slaMaxM2": 60,
+      "circuitosMinimos": null,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Cl. 770.7",
+        "documento": "MODULO_6.pdf",
+        "pagina": 6
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Límites inclusivos/exclusivos y circuitos mínimos (Tabla 770.7.II) no legibles en la Guía."
+    },
+    {
+      "grado": "medio",
+      "slaMinM2": 60,
+      "slaMaxM2": 130,
+      "circuitosMinimos": null,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Cl. 770.7",
+        "documento": "MODULO_6.pdf",
+        "pagina": 6
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Confirmar si 60 y 130 m² pertenecen a este grado. Circuitos mínimos: Tabla 770.7.II."
+    },
+    {
+      "grado": "elevado",
+      "slaMinM2": 130,
+      "slaMaxM2": 200,
+      "circuitosMinimos": null,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Cl. 770.7",
+        "documento": "MODULO_6.pdf",
+        "pagina": 6
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Confirmar límites. Circuitos mínimos: Tabla 770.7.II."
+    },
+    {
+      "grado": "superior",
+      "slaMinM2": 200,
+      "slaMaxM2": null,
+      "circuitosMinimos": null,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Cl. 770.7",
+        "documento": "MODULO_6.pdf",
+        "pagina": 6
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Circuitos mínimos: Tabla 770.7.II."
+    }
+  ]
+}

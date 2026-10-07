@@ -1,0 +1,189 @@
+{
+  "id": "aea770.bocasMinimasAmbiente",
+  "titulo": "Puntos mínimos de utilización (bocas) por ambiente y grado",
+  "fuente": {
+    "norma": "AEA 90364-7-770",
+    "edicion": "2017",
+    "referencia": "Tabla 770.7.I y Cl. 770.7.1",
+    "documento": "MODULO_6.pdf",
+    "pagina": 8
+  },
+  "verificado": false,
+  "nota": "Página de la Guía AEA 770 (Módulo 6) impresa en el pie; el número de página del PDF puede diferir. Cantidades mínimas; dormitorio, cocina completa, lavadero, garage y exterior quedan por transcribir (el escaneo de la Guía no es legible en esos cuadros). TUE: no exigible en estar-comedor ni pasillo.",
+  "filas": [
+    {
+      "ambiente": "estar-comedor",
+      "tipoBoca": "IUG",
+      "grados": [
+        "minimo",
+        "medio",
+        "elevado",
+        "superior"
+      ],
+      "cadaM2": 18,
+      "cadaMLongitudM": null,
+      "minimoBocas": 1,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tabla 770.7.I",
+        "documento": "MODULO_6.pdf",
+        "pagina": 8
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: 1 boca por cada 18 m² o fracción. Confirmar columna del grado mínimo (OCR ambiguo)."
+    },
+    {
+      "ambiente": "estar-comedor",
+      "tipoBoca": "TUG",
+      "grados": [
+        "minimo",
+        "medio",
+        "elevado",
+        "superior"
+      ],
+      "cadaM2": 6,
+      "cadaMLongitudM": null,
+      "minimoBocas": 2,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tabla 770.7.I",
+        "documento": "MODULO_6.pdf",
+        "pagina": 8
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: 1 boca por cada 6 m² o fracción. Confirmar columna del grado mínimo (OCR ambiguo)."
+    },
+    {
+      "ambiente": "pasillo",
+      "tipoBoca": "IUG",
+      "grados": [
+        "minimo",
+        "medio",
+        "elevado",
+        "superior"
+      ],
+      "cadaM2": null,
+      "cadaMLongitudM": 5,
+      "minimoBocas": 1,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tabla 770.7.I",
+        "documento": "MODULO_6.pdf",
+        "pagina": 16
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: 1 boca por cada 5 m de longitud o fracción. En L se suman ambas ramas."
+    },
+    {
+      "ambiente": "pasillo",
+      "tipoBoca": "TUG",
+      "grados": [
+        "medio",
+        "elevado",
+        "superior"
+      ],
+      "cadaM2": null,
+      "cadaMLongitudM": 5,
+      "minimoBocas": 1,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tabla 770.7.I",
+        "documento": "MODULO_6.pdf",
+        "pagina": 16
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: 1 boca por cada 5 m o fracción (mínimo 1 si L > 2 m). Grado mínimo: no exigible."
+    },
+    {
+      "ambiente": "vestibulo",
+      "tipoBoca": "TUG",
+      "grados": [
+        "medio",
+        "elevado",
+        "superior"
+      ],
+      "cadaM2": 12,
+      "cadaMLongitudM": null,
+      "minimoBocas": 1,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tabla 770.7.I",
+        "documento": "MODULO_6.pdf",
+        "pagina": 16
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: 1 boca por cada 12 m² o fracción (mín. 1). Confirmar ambiente y grados."
+    },
+    {
+      "ambiente": "bano",
+      "tipoBoca": "IUG",
+      "grados": [
+        "minimo",
+        "medio",
+        "elevado",
+        "superior"
+      ],
+      "cadaM2": null,
+      "cadaMLongitudM": null,
+      "minimoBocas": 1,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tabla 770.7.I",
+        "documento": "MODULO_6.pdf",
+        "pagina": 21
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Mínimo 1 boca IUG según la Guía (p. 21)."
+    },
+    {
+      "ambiente": "bano",
+      "tipoBoca": "TUG",
+      "grados": [
+        "minimo",
+        "medio",
+        "elevado",
+        "superior"
+      ],
+      "cadaM2": null,
+      "cadaMLongitudM": null,
+      "minimoBocas": 1,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tabla 770.7.I",
+        "documento": "MODULO_6.pdf",
+        "pagina": 21
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Mínimo 1 boca TUG según la Guía (p. 21); en toilette puede cargarse al circuito IUG (770.7.2 k)."
+    },
+    {
+      "ambiente": "cocina",
+      "tipoBoca": "TUG",
+      "grados": [
+        "minimo",
+        "medio",
+        "elevado",
+        "superior"
+      ],
+      "cadaM2": null,
+      "cadaMLongitudM": null,
+      "minimoBocas": 2,
+      "fuente": {
+        "norma": "AEA 90364-7-770",
+        "edicion": "2017",
+        "referencia": "Tabla 770.7.I",
+        "documento": "MODULO_6.pdf",
+        "pagina": 12
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: Kitchenette: 1 IUG, 2 TUG + 1 tomacorriente para artefacto fijo (770.7.1). Cocina completa: confirmar."
+    }
+  ]
+}
