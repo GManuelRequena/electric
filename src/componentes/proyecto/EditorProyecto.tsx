@@ -12,14 +12,16 @@ import { borrarProyecto, guardarProyecto } from "@/integraciones/persistencia/pr
 import { descargarTexto, nombreArchivo } from "./archivos";
 import { ListaHallazgos } from "./ListaHallazgos";
 import { PestanaAmbientes } from "./PestanaAmbientes";
+import { PestanaPlano } from "./PestanaPlano";
 import { PestanaCircuitos } from "./PestanaCircuitos";
 import { PestanaTablero } from "./PestanaTablero";
 import { RevisarConIA } from "./RevisarConIA";
 import { useProyecto } from "./usarProyecto";
 
-type Pestana = "ambientes" | "circuitos" | "tablero" | "validacion";
+type Pestana = "ambientes" | "plano" | "circuitos" | "tablero" | "validacion";
 const PESTANAS: { id: Pestana; texto: string }[] = [
   { id: "ambientes", texto: "Ambientes" },
+  { id: "plano", texto: "Plano" },
   { id: "circuitos", texto: "Circuitos" },
   { id: "tablero", texto: "Tablero" },
   { id: "validacion", texto: "Validación" },
@@ -89,7 +91,7 @@ export function EditorProyecto() {
             type="button"
             aria-selected={pestana === t.id}
             onClick={() => setPestana(t.id)}
-            className={`min-h-11 flex-1 rounded-lg px-1 text-sm font-medium ${pestana === t.id ? "bg-slate-900 text-white" : "bg-white text-slate-700"}`}
+            className={`min-h-11 flex-1 rounded-lg px-0.5 text-[13px] font-medium ${pestana === t.id ? "bg-slate-900 text-white" : "bg-white text-slate-700"}`}
           >
             {t.texto}
             {t.id === "validacion" && errores > 0 && <span className="ml-1 rounded-full bg-red-600 px-1.5 text-xs text-white">{errores}</span>}
@@ -99,6 +101,7 @@ export function EditorProyecto() {
 
       <div role="tabpanel">
         {pestana === "ambientes" && <PestanaAmbientes proyecto={p} hallazgos={hallazgos} abierto={ambienteAbierto} onAbrir={setAmbienteAbierto} cambiar={cambiar} />}
+        {pestana === "plano" && <PestanaPlano proyecto={p} cambiar={cambiar} />}
         {pestana === "circuitos" && <PestanaCircuitos proyecto={p} abierto={circuitoAbierto} onAbrir={setCircuitoAbierto} cambiar={cambiar} />}
         {pestana === "tablero" && <PestanaTablero proyecto={p} cambiar={cambiar} />}
         {pestana === "validacion" && (

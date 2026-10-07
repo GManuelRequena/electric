@@ -39,6 +39,13 @@ const circuito = z.object({
   metodoInstalacion: z.string(),
 });
 
+const punto = z.object({ x: z.number().finite(), y: z.number().finite() });
+const plano = z.object({
+  ambientes: z.array(punto.extend({ ambienteId: z.string(), anchoM: z.number().positive(), altoM: z.number().positive() })),
+  posiciones: z.record(z.string(), punto),
+  tablero: punto.optional(),
+});
+
 /** Formato del archivo de backup. El resultado de los cálculos no se guarda: se recalcula al importar. */
 export const esquemaProyecto = z.object({
   id: z.string().min(1),
@@ -57,7 +64,9 @@ export const esquemaProyecto = z.object({
     metrosHastaTablero: z.number().nonnegative().default(CONFIG_POR_DEFECTO.metrosHastaTablero),
     tensionV: z.number().positive().optional(),
     metodoInstalacion: z.string().optional(),
+    alturas: z.object({ tableroM: z.number().nonnegative(), techoM: z.number().nonnegative(), tomaM: z.number().nonnegative() }).optional(),
   }),
+  plano: plano.optional(),
   creado: z.string(),
   actualizado: z.string(),
 });

@@ -49,6 +49,7 @@ export interface Circuito {
   tipo: TipoCircuito;
   largoM?: number; // manual
   largoEstimado?: boolean; // true si se usó la estimación
+  largoDesdePlano?: boolean; // true si el largo salió del plano (recorrido ortogonal)
   metodoInstalacion: string;
   resultado?: ResultadoCircuito; // cache del cálculo
   error?: string; // por qué no se pudo calcular
@@ -59,11 +60,41 @@ export interface Tablero {
   puestaATierra: boolean;
 }
 
+/** Punto del plano en metros (x hacia la derecha, y hacia abajo). */
+export interface Punto {
+  x: number;
+  y: number;
+}
+
+/** Ambiente dibujado como rectángulo; (x, y) es la esquina superior izquierda. */
+export interface RectAmbiente extends Punto {
+  ambienteId: string;
+  anchoM: number;
+  altoM: number;
+}
+
+/** Plano en planta del proyecto (Fase 5.A). Todo en metros. */
+export interface Plano {
+  ambientes: RectAmbiente[];
+  posiciones: Record<string, Punto>; // id de elemento → posición
+  tablero?: Punto;
+}
+
+/** Alturas de montaje en metros: parámetros de la app (no vienen de la norma), editables por proyecto. */
+export interface AlturasMontaje {
+  tableroM: number;
+  techoM: number; // bocas de luz y artefactos fijos
+  tomaM: number; // tomacorrientes
+}
+
+export const ALTURAS_POR_DEFECTO: AlturasMontaje = { tableroM: 1.5, techoM: 2.6, tomaM: 0.3 };
+
 export interface ConfigProyecto {
   metrosPorBoca: number; // para estimar el largo
   metrosHastaTablero: number;
   tensionV?: number; // de los circuitos terminales; por defecto 220 V
   metodoInstalacion?: string; // por defecto para circuitos nuevos
+  alturas?: AlturasMontaje; // para el largo desde plano
 }
 
 export interface Proyecto {
@@ -79,6 +110,7 @@ export interface Proyecto {
   circuitos: Circuito[];
   tablero: Tablero;
   config: ConfigProyecto;
+  plano?: Plano;
   creado: string;
   actualizado: string;
 }

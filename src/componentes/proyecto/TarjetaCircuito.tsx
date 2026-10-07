@@ -6,6 +6,7 @@ import { DetalleCircuito } from "@/componentes/DetalleCircuito";
 import { fmt, aea770, type TipoCircuito } from "@/dominio/calculo";
 import type { Destino } from "@/dominio/circuitos/asignar";
 import { contarBocas, elementosDeCircuito, esBoca, estimarLargo } from "@/dominio/circuitos/largo";
+import { largoDesdePlano } from "@/dominio/circuitos/plano";
 import type { Circuito, Proyecto } from "@/dominio/proyecto/tipos";
 import { etiquetaElemento, nombreAmbiente } from "./etiquetas";
 
@@ -25,6 +26,7 @@ export function TarjetaCircuito({ circuito: c, proyecto: p, abierta, onAlternar,
   const r = c.resultado;
   const nombreTipo = aea770.tiposCircuito.filas.find((f) => f.tipo === c.tipo)?.nombre ?? c.tipo;
   const [largoTexto, setLargoTexto] = useState<string | null>(null);
+  const desdePlano = largoDesdePlano(c.id, p);
   const largoMostrado = largoTexto ?? (c.largoM != null ? String(c.largoM).replace(".", ",") : "");
   const elementos = elementosDeCircuito(p, c.id);
   const otros = p.circuitos.filter((x) => x.id !== c.id);
@@ -49,13 +51,14 @@ export function TarjetaCircuito({ circuito: c, proyecto: p, abierta, onAlternar,
         <div className="flex flex-col gap-3 border-t border-slate-200 p-4">
           <label className="flex flex-col gap-1 text-sm font-medium text-slate-700">
             Largo del circuito {c.largoEstimado && <span className="ml-1 rounded bg-amber-100 px-1.5 text-xs text-amber-900">estimado</span>}
+            {c.largoDesdePlano && <span className="ml-1 rounded bg-sky-100 px-1.5 text-xs text-sky-900">desde plano</span>}
             <div className="flex h-12 items-center rounded-lg border border-slate-300 bg-white focus-within:border-amber-500">
               <input
                 inputMode="decimal"
                 autoComplete="off"
                 aria-label={`Largo de ${c.id}`}
                 value={largoMostrado}
-                placeholder={`${fmt(estimarLargo(c, p))} (estimado)`}
+                placeholder={desdePlano ? `${fmt(desdePlano.largoM)} (desde plano)` : `${fmt(estimarLargo(c, p))} (estimado)`}
                 onChange={(e) => {
                   setLargoTexto(e.target.value);
                   const n = aNumero(e.target.value);

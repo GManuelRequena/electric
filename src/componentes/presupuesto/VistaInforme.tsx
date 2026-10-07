@@ -282,7 +282,7 @@ function Ficha({ f }: { f: FichaCircuito }) {
         {f.conductor?.caidaPct != null && (
           <li className="flex items-center gap-2">
             {f.conductor.semaforo && <PuntoSemaforo estado={f.conductor.semaforo} />}
-            Largo {fmt(f.largoM)} m{f.largoEstimado ? " (estimado)" : ""} · caída {fmt(f.conductor.caidaV ?? 0)} V = {fmt(f.conductor.caidaPct)} % (límite {fmt(f.conductor.limitePct ?? 0)} %)
+            Largo {fmt(f.largoM)} m{f.largoEstimado ? " (estimado)" : f.largoDesdePlano ? " (desde plano)" : ""} · caída {fmt(f.conductor.caidaV ?? 0)} V = {fmt(f.conductor.caidaPct)} % (límite {fmt(f.conductor.limitePct ?? 0)} %)
           </li>
         )}
         {f.diferencial && <li>Diferencial {f.diferencial.sensibilidadMa} mA{f.diferencial.obligatorio ? " (obligatorio)" : ""}</li>}
