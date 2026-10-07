@@ -27,7 +27,7 @@ Transcribir a JSON tipado las tablas de la AEA 90364 (sección 770, viviendas) q
 // src/dominio/normas/tipos.ts
 export interface Fuente {
   norma: string;          // "AEA 90364-7-770"
-  edicion?: string;       // "2017" (si figura)
+  edicion: string;        // "2017" (edición confirmada por el usuario)
   referencia: string;     // "Tabla 770.12.I" o "Art. 770.7.2"
   documento: string;      // "MODULO_6.pdf"
   pagina?: number;
@@ -87,9 +87,13 @@ Por cada tabla: buscá en el Módulo 6 (o en los Módulos 1 a 5 si la reproducen
 - `npm run norma:pendientes` muestra el listado.
 - No hay PDFs ni texto extenso de la norma en el repo.
 
+## Datos ya confirmados
+- Norma: **AEA 90364-7-770, edición 2017**.
+- Tensiones nominales: 220 V mono / 380 V tri.
+- `MODULO_6_1.pdf` es un duplicado de `MODULO_6.pdf`.
+
 ## Preguntas abiertas (hacerlas antes de empezar)
-- ¿Qué edición de la AEA 90364-7-770 usa el curso?
-- ¿Hay ejercicios resueltos en los módulos? Pedir páginas (se usan como tests en la Fase 1).
+- Si al transcribir encontrás ejercicios resueltos en los Módulos 1 a 5, anotá la página en `docs/plan/ejercicios.md` (se usan como tests en la Fase 1). El usuario no encontró ninguno por ahora.
 
 ## Al terminar
 Marcá la Fase 0 en `docs/plan/README.md`, hacé commit y push.

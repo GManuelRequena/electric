@@ -103,7 +103,7 @@ Un documento prolijo para entregar o enviar al cliente, generado desde el proyec
 - **Estructura detallada** (adaptada de la "Memoria técnica" de la app de referencia, ver `docs/plan/referencia-calculadora-pro.md`):
   1. **Carátula**:
      - cliente, n° de obra o informe, dirección, ciudad,
-     - instalador, matrícula, normativa aplicada (AEA 90364-7-770 + edición), fecha,
+     - instalador, matrícula, normativa aplicada (AEA 90364-7-770, edición 2017), fecha,
      - logo.
   2. **Objeto y alcance**: un texto estándar editable.
   3. **Resumen ejecutivo**: potencia instalada, demanda (con simultaneidad), grado de electrificación y cantidad de circuitos.

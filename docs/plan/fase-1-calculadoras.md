@@ -150,7 +150,11 @@ Las fórmulas (corriente mono y trifásica, caída de tensión) tienen que coinc
 - `elegirTermica`: elige el menor In normalizado ≥ Ib, y devuelve error si no existe ninguno ≤ Iz.
 - `elegirSeccion`: los tres motivos (mínima de la norma, por corriente, por caída de tensión) con casos que fuercen cada uno.
 - `calcularCircuito`: marca `artefactosConCircuitoPropio` cuando corresponde, y propaga advertencias de valores `verificado: false`.
-- **Ejercicios del curso**: por cada ejercicio resuelto de los Módulos 2 a 5 que te pase el usuario, un test con el enunciado como comentario y el resultado esperado. **Este es el criterio de aceptación principal.**
+- **Casos de referencia calculados a mano** (`src/dominio/calculo/casos-referencia.test.ts`). Por ahora no hay ejercicios resueltos del curso, así que:
+  - escribí al menos 8 casos típicos de vivienda: ducha 3500 W a 10 m y a 55 m, circuito TUG de cocina, IUG con 10 bocas LED, aire acondicionado de 3000 frigorías, termotanque, un circuito trifásico 380 V y una caída que obligue a subir de sección;
+  - cada caso lleva la cuenta hecha a mano en el comentario, paso por paso, con la fórmula del curso y los valores de tabla citados;
+  - marcá el archivo con `// REVISAR_USUARIO` y pedile al usuario que verifique los resultados;
+  - cuando aparezcan ejercicios resueltos del curso (ver `docs/plan/ejercicios.md`), se agregan como tests y pasan a ser el criterio principal.
 
 ## Criterios de aceptación
 - `npm run lint && npm test && npm run e2e && npm run build` en verde.
@@ -179,7 +183,7 @@ Ver `docs/plan/referencia-calculadora-pro.md`. En esta fase se incorporan:
 - Lista de artefactos típicos y sus potencias según el curso. ¿Algún valor personalizado?
 - Métodos de instalación más comunes en su práctica (para ponerlos primero).
 - ¿Curva de térmica por defecto: C?
-- Ejercicios resueltos para los tests (páginas de los módulos).
+- ¿Encontró ejercicios resueltos en el curso? Si los hay, sumarlos como tests (no es bloqueante).
 
 ## Al terminar
 Marcá la Fase 1 en `docs/plan/README.md`, hacé commit y push. Opcional: deploy en Vercel y pasarle el link al usuario.
