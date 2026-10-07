@@ -112,6 +112,23 @@ Las fórmulas (corriente mono y trifásica, caída de tensión) tienen que coinc
    - El resultado se muestra en vivo, fijo abajo: "Cable 2,5 mm² · Térmica 16 A C · Diferencial 30 mA", con un ✓ o ⚠.
    - Debajo: "Ver cálculo paso a paso" con las citas y las advertencias (circuito propio, valores sin verificar, caída no verificada por falta de largo).
 6. **`/calcular/rapida`**: un circuito con potencia o corriente directa. Usa el mismo `calcularCircuito` con un solo artefacto.
+6b. **`/calcular/caida-tension`** (calculadora dedicada a distancia y sección):
+   - **Entradas**:
+     - sistema (mono/tri),
+     - tensión,
+     - corriente **o** potencia + cos φ,
+     - largo del tramo (m),
+     - material,
+     - sección (opcional),
+     - límite de caída por tipo de tramo (de `caida-tension.json`; editable con un aviso si se aparta de la norma).
+   - **Modos**:
+     1. **Verificar**: con una sección dada → caída en V y %, tensión en el extremo y ✓/⚠ contra el límite.
+     2. **Sección mínima**: sin sección → recorre las secciones normalizadas y devuelve la menor que cumple (y además cumple Iz ≥ In y la sección mínima de la norma).
+     3. **Largo máximo**: con la sección dada → distancia máxima admisible para esa carga.
+   - **Tabla comparativa**: todas las secciones normalizadas con su caída % para el largo ingresado, resaltando la primera que cumple. Es lo más útil en obra.
+   - **Varios tramos** (opcional): línea principal + seccional + terminal, verificando la caída acumulada contra el límite total.
+   - Paso a paso con la fórmula usada (la del curso) y la cita del límite.
+   - Funciones de dominio: `caidaTension`, `seccionMinimaPorCaida`, `largoMaximo` y `tablaCaidaPorSeccion` en `src/dominio/calculo/caida.ts`, con sus tests.
 7. **`/calcular/vivienda`**: superficie + cantidad de ambientes por tipo → grado de electrificación, circuitos mínimos y tabla de bocas por ambiente.
 8. **Consultar (`/consultar`)** y el botón "Consultar en NotebookLM" en cada resultado:
    - Arma un texto con el contexto del cálculo y la pregunta.
