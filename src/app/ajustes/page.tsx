@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { Boton } from "@/componentes/Boton";
 import { aNumero, CampoNumero } from "@/componentes/CampoNumero";
@@ -27,8 +28,10 @@ export default function Ajustes() {
         <input value={a.notebookUrl} onChange={(e) => setA((p) => ({ ...p, notebookUrl: e.target.value }))} inputMode="url" className="h-12 rounded-lg border border-slate-300 bg-white px-3 text-base font-normal" />
         <span className="text-xs font-normal text-slate-500">Si el link no abre, probá con el dominio notebooklm.google.com.</span>
       </label>
+      <Link href="/ajustes/perfil" className="flex min-h-12 items-center justify-center rounded-xl border border-slate-300 bg-white px-4 font-semibold text-slate-800">Perfil del instalador</Link>
+      <Link href="/ajustes/precios" className="flex min-h-12 items-center justify-center rounded-xl border border-slate-300 bg-white px-4 font-semibold text-slate-800">Lista de precios</Link>
       <Boton variante="secundario" onClick={() => setA(AJUSTES_POR_DEFECTO)}>Restablecer ajustes</Boton>
-      <Boton variante="peligro" onClick={() => { if (window.confirm("¿Borrar todos los datos locales (ajustes, últimos cálculos y artefactos propios)?")) { borrarTodo(); setA(AJUSTES_POR_DEFECTO); setBorrado(true); } }}>
+      <Boton variante="peligro" onClick={() => { if (window.confirm("¿Borrar todos los datos locales (ajustes, perfil, últimos cálculos y artefactos propios)?")) { borrarTodo(); setA(AJUSTES_POR_DEFECTO); setBorrado(true); } }}>
         Borrar datos locales
       </Boton>
       {borrado && <p role="status" className="text-sm text-emerald-700">Datos locales borrados.</p>}

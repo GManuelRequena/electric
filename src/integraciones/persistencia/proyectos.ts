@@ -1,25 +1,7 @@
-import { openDB, type DBSchema, type IDBPDatabase } from "idb";
 import type { Proyecto } from "@/dominio/proyecto/tipos";
+import { _reiniciar, db } from "./db";
 
-interface Esquema extends DBSchema {
-  proyectos: { key: string; value: Proyecto; indexes: { porActualizado: string } };
-}
-
-let abierta: Promise<IDBPDatabase<Esquema>> | undefined;
-
-function db() {
-  abierta ??= openDB<Esquema>("electricista", 1, {
-    upgrade(d) {
-      d.createObjectStore("proyectos", { keyPath: "id" }).createIndex("porActualizado", "actualizado");
-    },
-  });
-  return abierta;
-}
-
-/** Solo para los tests: fuerza a reabrir la base. */
-export function _reiniciar(): void {
-  abierta = undefined;
-}
+export { _reiniciar };
 
 export async function listarProyectos(): Promise<Proyecto[]> {
   return (await (await db()).getAllFromIndex("proyectos", "porActualizado")).reverse();

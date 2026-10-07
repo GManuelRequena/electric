@@ -1,13 +1,7 @@
 import type { ResultadoCircuito } from "@/dominio/calculo";
-import { fmt } from "@/dominio/calculo";
+import { fmt, semaforoCaida, type Semaforo } from "@/dominio/calculo";
 
-export type Semaforo = "verde" | "ambar" | "rojo";
-
-/** Verde si cumple con margen, ámbar si cumple pero usa más del 90 % del límite, rojo si lo supera. */
-export function semaforoCaida(pct: number, limitePct: number): Semaforo {
-  if (pct > limitePct) return "rojo";
-  return pct > 0.9 * limitePct ? "ambar" : "verde";
-}
+export { semaforoCaida, type Semaforo };
 
 const COLORES: Record<Semaforo, string> = {
   verde: "bg-emerald-500",
