@@ -3,7 +3,7 @@ import type { ButtonHTMLAttributes } from "react";
 type Variante = "primario" | "secundario" | "peligro";
 
 const ESTILOS: Record<Variante, string> = {
-  primario: "bg-amber-500 text-slate-900 active:bg-amber-600",
+  primario: "bg-amber-500 text-slate-950 active:bg-amber-600",
   secundario: "border border-slate-300 bg-white text-slate-800 active:bg-slate-100",
   peligro: "border border-red-300 bg-white text-red-700 active:bg-red-50",
 };

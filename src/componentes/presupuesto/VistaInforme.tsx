@@ -95,7 +95,7 @@ export function VistaInforme() {
         ))}
       </div>
 
-      <article aria-label="Informe" className="informe flex flex-col gap-6 rounded-xl bg-white p-4 text-sm text-slate-900">
+      <article aria-label="Informe" className="informe flex flex-col gap-6 rounded-xl bg-white p-4 text-sm text-slate-900 fondo-claro">
         <Caratula informe={informe} />
         {informe.secciones.map((s) => (
           <Seccion key={s.id} s={s} />

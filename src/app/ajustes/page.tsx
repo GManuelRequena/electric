@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { aplicarTema } from "@/componentes/AplicarTema";
 import { Boton } from "@/componentes/Boton";
 import { ContadorUso } from "@/componentes/ContadorUso";
 import { aNumero, CampoNumero } from "@/componentes/CampoNumero";
@@ -19,6 +20,7 @@ export default function Ajustes() {
   if (!listo) return <Pagina titulo="Ajustes" atras="/calcular">{null}</Pagina>;
   return (
     <Pagina titulo="Ajustes" atras="/calcular">
+      <Segmentado etiqueta="Tema" valor={a.tema} opciones={[{ valor: "auto", texto: "Automático" }, { valor: "claro", texto: "Claro" }, { valor: "oscuro", texto: "Oscuro" }]} onCambio={(v) => { setA((p) => ({ ...p, tema: v })); aplicarTema(v); }} />
       <CampoNumero etiqueta="Tensión monofásica" unidad="V" valor={String(a.tensionMonoV)} onCambio={(v) => num(v, "tensionMonoV")} ayuda="Nominal del curso: 220 V." />
       <CampoNumero etiqueta="Tensión trifásica" unidad="V" valor={String(a.tensionTriV)} onCambio={(v) => num(v, "tensionTriV")} ayuda="Nominal del curso: 380 V." />
       <Segmentado etiqueta="Material por defecto" valor={a.material} opciones={[{ valor: "cobre", texto: "Cobre" }, { valor: "aluminio", texto: "Aluminio" }]} onCambio={(v) => setA((p) => ({ ...p, material: v }))} />
@@ -32,8 +34,8 @@ export default function Ajustes() {
       <ContadorUso />
       <Link href="/ajustes/perfil" className="flex min-h-12 items-center justify-center rounded-xl border border-slate-300 bg-white px-4 font-semibold text-slate-800">Perfil del instalador</Link>
       <Link href="/ajustes/precios" className="flex min-h-12 items-center justify-center rounded-xl border border-slate-300 bg-white px-4 font-semibold text-slate-800">Lista de precios</Link>
-      <Boton variante="secundario" onClick={() => setA(AJUSTES_POR_DEFECTO)}>Restablecer ajustes</Boton>
-      <Boton variante="peligro" onClick={() => { if (window.confirm("¿Borrar todos los datos locales (ajustes, perfil, últimos cálculos y artefactos propios)?")) { borrarTodo(); setA(AJUSTES_POR_DEFECTO); setBorrado(true); } }}>
+      <Boton variante="secundario" onClick={() => { setA(AJUSTES_POR_DEFECTO); aplicarTema(AJUSTES_POR_DEFECTO.tema); }}>Restablecer ajustes</Boton>
+      <Boton variante="peligro" onClick={() => { if (window.confirm("¿Borrar todos los datos locales (ajustes, perfil, últimos cálculos y artefactos propios)?")) { borrarTodo(); setA(AJUSTES_POR_DEFECTO); aplicarTema(AJUSTES_POR_DEFECTO.tema); setBorrado(true); } }}>
         Borrar datos locales
       </Boton>
       {borrado && <p role="status" className="text-sm text-emerald-700">Datos locales borrados.</p>}

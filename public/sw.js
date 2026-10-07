@@ -1,5 +1,5 @@
 /* Service worker de Electricista: deja las calculadoras disponibles sin conexión. */
-const VERSION = "v4";
+const VERSION = "v5";
 const CACHE = `electricista-${VERSION}`;
 const RUTAS = [
   "/calcular",
@@ -7,6 +7,12 @@ const RUTAS = [
   "/calcular/rapida",
   "/calcular/caida-tension",
   "/calcular/vivienda",
+  "/calcular/herramientas",
+  "/calcular/herramientas/ohm",
+  "/calcular/herramientas/potencia",
+  "/calcular/herramientas/consumo",
+  "/calcular/herramientas/factor-potencia",
+  "/calcular/herramientas/fotovoltaico",
   "/proyectos",
   "/proyectos/ver",
   "/presupuesto",

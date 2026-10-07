@@ -7,8 +7,9 @@ import { Boton } from "@/componentes/Boton";
 import { aNumero, CampoNumero } from "@/componentes/CampoNumero";
 import { HojaInferior } from "@/componentes/HojaInferior";
 import { Pagina } from "@/componentes/Pagina";
-import { Segmentado } from "@/componentes/Selector";
+import { Segmentado, Selector } from "@/componentes/Selector";
 import { importarProyecto } from "@/dominio/proyecto/esquema";
+import { PLANTILLAS, proyectoDesdePlantilla, superficiePlantilla } from "@/dominio/proyecto/plantillas";
 import { proyectoNuevo, type Proyecto } from "@/dominio/proyecto/tipos";
 import type { Sistema } from "@/dominio/calculo";
 import { guardarProyecto, listarProyectos } from "@/integraciones/persistencia/proyectos";
@@ -91,9 +92,22 @@ function FormNuevo({ onCrear }: { onCrear: (p: Proyecto) => void | Promise<void>
   const [nombre, setNombre] = useState("");
   const [sup, setSup] = useState("");
   const [sistema, setSistema] = useState<Sistema>("monofasico");
+  const [plantilla, setPlantilla] = useState("");
   const s = aNumero(sup);
+  const pl = PLANTILLAS.find((x) => x.id === plantilla);
   return (
     <div className="flex flex-col gap-3">
+      <Selector
+        etiqueta="Plantilla"
+        valor={plantilla}
+        opciones={[{ valor: "", texto: "Proyecto vacío" }, ...PLANTILLAS.map((x) => ({ valor: x.id, texto: x.nombre }))]}
+        onCambio={(id) => {
+          setPlantilla(id);
+          const elegida = PLANTILLAS.find((x) => x.id === id);
+          if (elegida) setSup(String(superficiePlantilla(elegida)));
+        }}
+        ayuda={pl ? `${pl.descripcion} Las medidas son de ejemplo: ajustalas a tu obra.` : undefined}
+      />
       <label className="flex flex-col gap-1 text-sm font-medium text-slate-700">
         Nombre
         <input value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Casa de los García" className="h-12 rounded-lg border border-slate-300 bg-white px-3 text-base font-normal" />
@@ -108,7 +122,10 @@ function FormNuevo({ onCrear }: { onCrear: (p: Proyecto) => void | Promise<void>
         ]}
         onCambio={setSistema}
       />
-      <Boton disabled={!s || s <= 0} onClick={() => onCrear(proyectoNuevo({ nombre: nombre.trim() || "Vivienda sin nombre", superficieM2: s!, sistema }))}>
+      <Boton disabled={!s || s <= 0} onClick={() => {
+          const datos = { nombre: nombre.trim() || "Vivienda sin nombre", superficieM2: s!, sistema };
+          return onCrear(pl ? proyectoDesdePlantilla(pl, datos) : proyectoNuevo(datos));
+        }}>
         Crear proyecto
       </Boton>
     </div>

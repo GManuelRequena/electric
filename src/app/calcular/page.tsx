@@ -2,17 +2,18 @@
 
 import Link from "next/link";
 import { Pagina } from "@/componentes/Pagina";
-import { useAlmacen, type CalculoGuardado } from "@/integraciones/persistencia/almacen";
+import { borrarHistorial, useAlmacen, type CalculoGuardado } from "@/integraciones/persistencia/almacen";
 
 const TARJETAS = [
   { href: "/calcular/artefactos", titulo: "Por artefactos", texto: "Cargá lo que se usa: te da cable, térmica y diferencial.", icono: "🔌" },
   { href: "/calcular/rapida", titulo: "Rápida", texto: "Un circuito suelto con potencia o corriente.", icono: "⚡" },
   { href: "/calcular/caida-tension", titulo: "Caída de tensión", texto: "Verificá, buscá la sección mínima o el largo máximo.", icono: "📉" },
+  { href: "/calcular/herramientas", titulo: "Herramientas", texto: "Ohm, potencia en CA, consumo y costo, factor de potencia, fotovoltaico.", icono: "🧰" },
   { href: "/calcular/vivienda", titulo: "Vivienda", texto: "Grado de electrificación y bocas mínimas por ambiente.", icono: "🏠" },
 ];
 
 export default function Calcular() {
-  const [ultimos] = useAlmacen<CalculoGuardado[]>("ultimos", []);
+  const [ultimos, setUltimos] = useAlmacen<CalculoGuardado[]>("ultimos", []);
   return (
     <Pagina titulo="Calcular">
       <ul className="flex flex-col gap-3">
@@ -31,8 +32,11 @@ export default function Calcular() {
         ))}
       </ul>
       {ultimos.length > 0 && (
-        <section aria-label="Últimos cálculos" className="flex flex-col gap-2">
-          <h2 className="text-sm font-semibold text-slate-600">Últimos cálculos</h2>
+        <section aria-label="Historial de cálculos" className="flex flex-col gap-2">
+          <div className="flex items-center justify-between">
+            <h2 className="text-sm font-semibold text-slate-600">Historial de cálculos</h2>
+            <button type="button" onClick={() => { borrarHistorial(); setUltimos([]); }} className="min-h-11 px-2 text-sm text-slate-600 underline">Borrar historial</button>
+          </div>
           <ul className="flex flex-col gap-2">
             {ultimos.map((u) => (
               <li key={u.id}>
