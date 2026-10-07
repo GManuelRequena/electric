@@ -158,8 +158,10 @@ Las fórmulas (corriente mono y trifásica, caída de tensión) tienen que coinc
 - En 390×844 no hay scroll horizontal y los botones miden ≥ 44px.
 - Cada número normativo en pantalla tiene su cita.
 
+## Datos ya provistos por el usuario
+- URL del notebook de NotebookLM: `https://notebook.google.com/notebook/3542ef10-60ec-40f0-9614-6ba471b40320/preview`. Usarla como valor por defecto en `/ajustes` (editable). Ojo: el dominio habitual es `notebooklm.google.com`; si el link no abre, confirmarlo con el usuario.
+
 ## Preguntas abiertas
-- URL del notebook de NotebookLM.
 - Lista de artefactos típicos y sus potencias según el curso. ¿Algún valor personalizado?
 - Métodos de instalación más comunes en su práctica (para ponerlos primero).
 - ¿Curva de térmica por defecto: C?
