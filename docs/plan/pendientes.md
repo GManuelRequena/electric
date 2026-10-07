@@ -1,10 +1,10 @@
 # Pendientes de la Fase 0
 
-Se resuelven antes de cerrar la Fase 1 los marcados **[bloquea F1]**; el resto se puede dejar para el final de todas las fases. `npm run norma:pendientes` lista además cada fila con `verificado: false`.
+Se resuelven antes de cerrar la Fase 1 los marcados **[bloquea F1]** (P2 y P3); el resto se puede dejar para el final de todas las fases. `npm run norma:pendientes` lista además cada fila con `verificado: false`.
 
 ## Decisiones
 
-- **P1 [bloquea F1] Edición/criterio del curso vs. Guía AEA 770 (2017).** El Módulo 4 calcula con 150 VA por boca de iluminación, 1 boca cada 20 m², 66 % de simultaneidad y grados por VA (6000 VA). La Guía 2017 usa 60 VA por boca, 1 boca cada 18 m², 2/3 y grados por superficie. Hay que decidir cuál es la fuente de verdad (se asumió la Guía 2017, que es la edición confirmada) y si los ejercicios del curso se adaptan.
+- **P1 [resuelto] Fuente de verdad: Guía AEA 770 (edición 2017).** Decisión del usuario. Ante cualquier diferencia con el curso (150 VA por boca, 1 boca cada 20 m², 66 %, grados por VA), manda la Guía (60 VA por boca, 1 boca cada 18 m², 2/3, grados por superficie). Los datos del curso se usan solo como respaldo, marcados `verificado: false`, y no para tests. Los ejercicios del Módulo 4 no se convierten en tests tal cual: se recalculan con los criterios de la Guía.
 
 ## Datos que faltan
 

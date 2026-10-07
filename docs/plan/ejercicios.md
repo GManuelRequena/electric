@@ -14,4 +14,4 @@ Cuando aparezca uno, agregalo acá y pedile al agente que lo convierta en un tes
 | 4 | ~342 | Ip circuito TUE: 2750 VA / 220 V | 12,5 A | No |
 | 4 | ~342 | Ip línea seccional: 11055 VA / 220 V; 10 mm² (43 A × 1,22) | 50,25 A; Iz 52,5 A, válido | No |
 
-> Estos ejercicios usan criterios del curso (150 VA por boca, 66 %), no de la Guía AEA 770 2017 (60 VA por boca, 2/3). Antes de convertirlos en tests, ver `pendientes.md` (P1). Las páginas son aproximadas (número impreso del Manual).
+> Estos ejercicios usan criterios del curso (150 VA por boca, 66 %), no de la Guía AEA 770 2017 (60 VA por boca, 2/3). Decisión (P1 en `pendientes.md`): la Guía 2017 manda, así que no se usan como tests tal cual; se recalculan con los criterios de la Guía. Las páginas son aproximadas (número impreso del Manual).
