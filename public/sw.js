@@ -1,5 +1,5 @@
 /* Service worker de Electricista: deja las calculadoras disponibles sin conexión. */
-const VERSION = "v2";
+const VERSION = "v3";
 const CACHE = `electricista-${VERSION}`;
 const RUTAS = [
   "/calcular",
@@ -10,8 +10,12 @@ const RUTAS = [
   "/proyectos",
   "/proyectos/ver",
   "/presupuesto",
+  "/presupuesto/ver",
+  "/presupuesto/informe",
   "/consultar",
   "/ajustes",
+  "/ajustes/precios",
+  "/ajustes/perfil",
 ];
 
 // Al instalar: guarda el HTML de cada ruta y todos los archivos /_next/static que referencia.

@@ -1,0 +1,21 @@
+{
+  "nota": "Catálogo genérico de materiales (no es un valor de la norma). Nombres y presentaciones orientativos: PENDIENTE_VERIFICAR con el instalador (ver docs/plan/pendientes.md, P31). Los cables, las térmicas, los diferenciales y los gabinetes se generan por código en materiales.ts.",
+  "items": [
+    { "codigo": "CANO_CORRUGADO_20", "descripcion": "Caño corrugado reforzado 3/4\" (20 mm)", "unidad": "m", "categoria": "canalizaciones", "presentacion": { "unidad": "rollo", "cantidad": 25 } },
+    { "codigo": "CANO_CORRUGADO_25", "descripcion": "Caño corrugado reforzado 1\" (25 mm)", "unidad": "m", "categoria": "canalizaciones", "presentacion": { "unidad": "rollo", "cantidad": 25 } },
+    { "codigo": "CANO_RIGIDO_20", "descripcion": "Caño rígido PVC 3/4\" (barra de 3 m)", "unidad": "m", "categoria": "canalizaciones" },
+    { "codigo": "CAJA_OCTOGONAL", "descripcion": "Caja octogonal para boca de luz", "unidad": "u", "categoria": "cajas" },
+    { "codigo": "CAJA_RECTANGULAR", "descripcion": "Caja rectangular 5 x 10 cm para tecla o toma", "unidad": "u", "categoria": "cajas" },
+    { "codigo": "CAJA_MIGNON", "descripcion": "Caja mignon", "unidad": "u", "categoria": "cajas" },
+    { "codigo": "CAJA_PASO", "descripcion": "Caja de paso / derivación", "unidad": "u", "categoria": "cajas" },
+    { "codigo": "MOD_TECLA", "descripcion": "Módulo de tecla simple", "unidad": "u", "categoria": "mecanismos" },
+    { "codigo": "MOD_TECLA_COMBINACION", "descripcion": "Módulo de tecla de combinación", "unidad": "u", "categoria": "mecanismos" },
+    { "codigo": "MOD_TOMA_10A", "descripcion": "Módulo toma 2P+T 10 A", "unidad": "u", "categoria": "mecanismos" },
+    { "codigo": "MOD_TOMA_20A", "descripcion": "Módulo toma 2P+T 20 A", "unidad": "u", "categoria": "mecanismos" },
+    { "codigo": "BASTIDOR", "descripcion": "Bastidor para módulos", "unidad": "u", "categoria": "mecanismos" },
+    { "codigo": "TAPA", "descripcion": "Tapa para módulos", "unidad": "u", "categoria": "mecanismos" },
+    { "codigo": "JABALINA", "descripcion": "Jabalina de puesta a tierra (acero-cobre)", "unidad": "u", "categoria": "puesta_a_tierra" },
+    { "codigo": "CAJA_INSPECCION_PAT", "descripcion": "Caja de inspección para jabalina", "unidad": "u", "categoria": "puesta_a_tierra" },
+    { "codigo": "BORNE_PAT", "descripcion": "Borne de conexión a jabalina", "unidad": "u", "categoria": "puesta_a_tierra" }
+  ]
+}

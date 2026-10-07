@@ -13,3 +13,24 @@ body {
 summary::-webkit-details-marker {
   display: none;
 }
+
+@media print {
+  body {
+    background: white;
+  }
+  nav[aria-label="Navegación principal"],
+  .no-imprimir {
+    display: none !important;
+  }
+  main {
+    max-width: none;
+    padding: 0;
+  }
+  .informe {
+    border-radius: 0;
+    padding: 0;
+  }
+  .informe section {
+    break-inside: avoid-page;
+  }
+}

@@ -61,3 +61,11 @@ export function limiteCaida(tipo: TipoCircuito | undefined, norma: Norma = aea77
 export function paso(p: Paso): Paso {
   return p;
 }
+
+export type Semaforo = "verde" | "ambar" | "rojo";
+
+/** Verde si cumple con margen, ámbar si cumple pero usa más del 90 % del límite, rojo si lo supera (el 90 % es un criterio de la app, P17). */
+export function semaforoCaida(pct: number, limitePct: number): Semaforo {
+  if (pct > limitePct) return "rojo";
+  return pct > 0.9 * limitePct ? "ambar" : "verde";
+}
