@@ -23,6 +23,8 @@ export default defineConfig({
     url: "http://localhost:3100/calcular",
     reuseExistingServer: !process.env.CI,
     timeout: 240_000,
+    // Login de prueba; sin ANTHROPIC_API_KEY a propósito: los tests de la IA mockean la respuesta del servidor.
+    env: { APP_PASSWORD: "clave-e2e", SESSION_SECRET: "secreto-e2e", ANTHROPIC_API_KEY: "" },
   },
   projects: [
     { name: "movil-390x844", use: { ...devices["Pixel 5"], viewport: { width: 390, height: 844 }, launchOptions } },

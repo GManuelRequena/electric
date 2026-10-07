@@ -8,7 +8,7 @@ interface Props {
   onCambio: (v: string) => void;
   ayuda?: string;
   placeholder?: string;
-  tipo?: "text" | "email" | "tel";
+  tipo?: "text" | "email" | "tel" | "password";
   multilinea?: boolean;
 }
 

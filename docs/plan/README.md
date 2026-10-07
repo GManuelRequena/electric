@@ -16,7 +16,7 @@ Una fase por sesión. Revisá el resultado en el celular antes de pasar a la sig
 - [x] [Fase 1: Calculadoras + PWA](fase-1-calculadoras.md)
 - [x] [Fase 2: Proyectos con catálogo y circuitos según la norma](fase-2-proyectos.md)
 - [x] [Fase 3: Presupuesto de materiales](fase-3-presupuesto.md)
-- [ ] [Fase 4: IA (chat con la norma)](fase-4-ia.md)
+- [x] [Fase 4: IA (chat con la norma)](fase-4-ia.md)
 - [ ] [Fase 5: Extras y escalado](fase-5-extras.md)
 
 > Fase 0: estructura y loaders completos; varias tablas quedan parciales o `verificado: false` (ver `npm run norma:pendientes`).

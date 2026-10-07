@@ -10,9 +10,13 @@
     "test": "vitest run",
     "lint": "eslint . && tsc --noEmit",
     "e2e": "playwright test",
-    "norma:pendientes": "tsx scripts/norma-pendientes.ts"
+    "norma:pendientes": "tsx scripts/norma-pendientes.ts",
+    "ingestar": "tsx scripts/ingestar.ts",
+    "eval:ia": "tsx scripts/eval-ia.ts",
+    "verificar:bundle": "tsx scripts/verificar-bundle.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.132.0",
     "exceljs": "^4.4.0",
     "next": "^16.4.0",
     "react": "^19.3.0",
