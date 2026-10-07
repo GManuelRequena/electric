@@ -61,3 +61,5 @@ Antes de cada commit: `npm run lint && npm test` en verde.
 - Trabajá **una fase a la vez**, siguiendo `docs/plan/fase-N-*.md`.
 - Si la fase tiene "Preguntas abiertas", hacelas antes de suponer las respuestas.
 - Al terminar una fase: marcá el checklist en `docs/plan/README.md`, commit y push.
+- **Ramas**: `master` es estable y `development` es la rama de integración. Nunca se hace push directo a ninguna de las dos.
+- **Un PR por fase**, de la rama de trabajo hacia `development`, con `npm run lint && npm test` en verde. El PR se abre solo cuando el usuario lo pide. `master` se actualiza desde `development` con un PR aparte, cuando el usuario lo decida.

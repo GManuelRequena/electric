@@ -3,3 +3,7 @@ node_modules
 material/
 *.pdf
 .env*
+next-env.d.ts
+*.tsbuildinfo
+test-results/
+playwright-report/
