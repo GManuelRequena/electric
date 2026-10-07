@@ -14,6 +14,7 @@ import { ListaHallazgos } from "./ListaHallazgos";
 import { PestanaAmbientes } from "./PestanaAmbientes";
 import { PestanaCircuitos } from "./PestanaCircuitos";
 import { PestanaTablero } from "./PestanaTablero";
+import { RevisarConIA } from "./RevisarConIA";
 import { useProyecto } from "./usarProyecto";
 
 type Pestana = "ambientes" | "circuitos" | "tablero" | "validacion";
@@ -101,11 +102,14 @@ export function EditorProyecto() {
         {pestana === "circuitos" && <PestanaCircuitos proyecto={p} abierto={circuitoAbierto} onAbrir={setCircuitoAbierto} cambiar={cambiar} />}
         {pestana === "tablero" && <PestanaTablero proyecto={p} cambiar={cambiar} />}
         {pestana === "validacion" && (
-          <ListaHallazgos
-            hallazgos={hallazgos}
-            onIrAmbiente={(aid) => irA("ambientes", () => setAmbienteAbierto(aid), `ambiente-${aid}`)}
-            onIrCircuito={(cid) => irA("circuitos", () => setCircuitoAbierto(cid), `circuito-${cid}`)}
-          />
+          <div className="flex flex-col gap-4">
+            <ListaHallazgos
+              hallazgos={hallazgos}
+              onIrAmbiente={(aid) => irA("ambientes", () => setAmbienteAbierto(aid), `ambiente-${aid}`)}
+              onIrCircuito={(cid) => irA("circuitos", () => setCircuitoAbierto(cid), `circuito-${cid}`)}
+            />
+            <RevisarConIA proyecto={p} hallazgos={hallazgos} />
+          </div>
         )}
       </div>
 

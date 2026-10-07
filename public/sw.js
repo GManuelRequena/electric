@@ -1,5 +1,5 @@
 /* Service worker de Electricista: deja las calculadoras disponibles sin conexión. */
-const VERSION = "v3";
+const VERSION = "v4";
 const CACHE = `electricista-${VERSION}`;
 const RUTAS = [
   "/calcular",
@@ -62,6 +62,8 @@ self.addEventListener("fetch", (evento) => {
   if (req.method !== "GET") return;
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
+  // La API del asistente y el login siempre van a la red (nada de cachear respuestas con sesión).
+  if (url.pathname.startsWith("/api/") || url.pathname.startsWith("/login")) return;
 
   // Archivos estáticos con hash: cache primero.
   if (url.pathname.startsWith("/_next/static/") || url.pathname.startsWith("/icon-")) {

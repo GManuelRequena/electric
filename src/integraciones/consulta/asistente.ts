@@ -1,5 +1,7 @@
-/** Interfaz para consultar la norma; hoy es un link a NotebookLM, en la Fase 4 será un chat con IA. */
-export interface AsistenteNorma {
+import type { CitaFuente } from "./servidor/herramientas";
+
+/** Consulta externa (link a NotebookLM): copia la pregunta y abre el notebook. */
+export interface ConsultaExterna {
   consultar(pregunta: string, contexto?: string): Promise<{ copiado: boolean }>;
 }
 
@@ -11,7 +13,7 @@ export function armarConsulta(pregunta: string, contexto?: string): string {
   return partes.join("\n\n");
 }
 
-export class NotebookLmLink implements AsistenteNorma {
+export class NotebookLmLink implements ConsultaExterna {
   constructor(private readonly url: string) {}
 
   async consultar(pregunta: string, contexto?: string): Promise<{ copiado: boolean }> {
@@ -25,4 +27,34 @@ export class NotebookLmLink implements AsistenteNorma {
     if (this.url) window.open(this.url, "_blank", "noopener,noreferrer");
     return { copiado };
   }
+}
+
+export type { CitaFuente };
+
+/** Respuesta completa del asistente con IA (Fase 4). */
+export interface RespuestaAsistente {
+  texto: string;
+  citas: CitaFuente[];
+  herramientasUsadas: string[];
+  costoUsd?: number;
+}
+
+export interface Turno {
+  rol: "user" | "assistant";
+  texto: string;
+}
+
+export interface OpcionesPregunta {
+  contexto?: string;
+  historial?: Turno[];
+  /** Se llama con cada fragmento de texto a medida que llega (streaming). */
+  onTexto?: (fragmento: string) => void;
+  onHerramienta?: (nombre: string) => void;
+  signal?: AbortSignal;
+}
+
+/** Asistente que responde preguntas sobre la norma. `ClaudeAsistente` es la implementación con IA. */
+export interface AsistenteNorma {
+  id: string;
+  preguntar(pregunta: string, opciones?: OpcionesPregunta): Promise<RespuestaAsistente>;
 }

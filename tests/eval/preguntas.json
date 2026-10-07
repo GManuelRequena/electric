@@ -1,0 +1,25 @@
+{
+  "_nota": "BORRADOR de la Fase 4: las preguntas son mías y Manu tiene que revisarlas/reemplazarlas (ver pendientes.md). 'herramientas' = alguna de estas debe haberse usado; 'citar' = la respuesta debe traer al menos una cita; 'contiene' = textos que deben aparecer; 'calculo' = el script corre la función del dominio y exige que el resultado (campo) aparezca en la respuesta.",
+  "preguntas": [
+    { "id": "termica-3500", "pregunta": "¿Qué térmica va para un circuito de 3500 W monofásico a 220 V, con 12 m de cable y cañería embutida?", "herramientas": ["calcular_circuito"], "citar": true, "calculo": { "entrada": { "sistema": "monofasico", "tensionV": 220, "artefactos": [{ "id": "a", "nombre": "carga", "potenciaW": 3500, "cantidad": 1, "simultaneo": true }], "largoM": 12 }, "campo": "termicaA" } },
+    { "id": "seccion-ducha", "pregunta": "¿Qué sección de cable necesita una ducha eléctrica de 5500 W a 220 V, a 8 m del tablero?", "herramientas": ["calcular_circuito"], "citar": true, "calculo": { "entrada": { "sistema": "monofasico", "tensionV": 220, "artefactos": [{ "id": "a", "nombre": "ducha", "potenciaW": 5500, "cantidad": 1, "simultaneo": true }], "largoM": 8 }, "campo": "seccionMm2" } },
+    { "id": "corriente-2000", "pregunta": "¿Cuál es la corriente de proyecto de un circuito de 2000 W a 220 V?", "herramientas": ["calcular_circuito"], "citar": true, "calculo": { "entrada": { "sistema": "monofasico", "tensionV": 220, "artefactos": [{ "id": "a", "nombre": "carga", "potenciaW": 2000, "cantidad": 1, "simultaneo": true }] }, "campo": "corrienteProyectoA" } },
+    { "id": "caida-tension", "pregunta": "Un tomacorriente de 1800 W a 220 V está a 25 m del tablero. ¿Cuánta caída de tensión da y cumple?", "herramientas": ["calcular_circuito"], "citar": true },
+    { "id": "grado-90m2", "pregunta": "¿Qué grado de electrificación tiene una vivienda de 90 m² cubiertos?", "herramientas": ["calcular_vivienda", "consultar_tabla"], "citar": true },
+    { "id": "grado-semicubierto", "pregunta": "Vivienda de 60 m² cubiertos y 20 m² semicubiertos: ¿qué grado corresponde y cómo se cuenta lo semicubierto?", "herramientas": ["calcular_vivienda"], "citar": true },
+    { "id": "bocas-cocina", "pregunta": "¿Cuántas bocas mínimas necesita una cocina en una vivienda de 70 m²?", "herramientas": ["calcular_vivienda", "consultar_tabla", "buscar_norma"], "citar": true },
+    { "id": "bocas-pasillo", "pregunta": "Tengo un pasillo de 10 m en una vivienda de 80 m². ¿Cuántas bocas de iluminación lleva?", "herramientas": ["calcular_vivienda", "consultar_tabla"], "citar": true },
+    { "id": "circuitos-minimos", "pregunta": "¿Cuántos circuitos mínimos exige la norma para una vivienda de grado medio?", "herramientas": ["calcular_vivienda", "consultar_tabla", "buscar_norma"], "citar": true },
+    { "id": "tipos-circuito", "pregunta": "¿Qué diferencia hay entre un circuito TUG y un TUE?", "herramientas": ["consultar_tabla", "buscar_norma"], "citar": true },
+    { "id": "diferencial", "pregunta": "¿Qué sensibilidad de diferencial pide la norma para circuitos de una vivienda?", "herramientas": ["consultar_tabla", "buscar_norma", "calcular_circuito"], "citar": true },
+    { "id": "seccion-minima-iug", "pregunta": "¿Cuál es la sección mínima de cable para un circuito de iluminación de uso general?", "herramientas": ["consultar_tabla", "buscar_norma"], "citar": true },
+    { "id": "calibre-max-tug", "pregunta": "¿Cuál es el calibre máximo de la protección de un circuito TUG?", "herramientas": ["consultar_tabla", "buscar_norma"], "citar": true },
+    { "id": "limite-caida", "pregunta": "¿Cuál es el límite de caída de tensión para iluminación y para otras cargas?", "herramientas": ["consultar_tabla", "buscar_norma"], "citar": true },
+    { "id": "curva-motor", "pregunta": "¿Qué curva de disparo conviene para un circuito de tomacorrientes de uso general?", "herramientas": ["calcular_circuito", "consultar_tabla", "buscar_norma"], "citar": true },
+    { "id": "no-esta-en-fuentes", "pregunta": "¿Qué dice el artículo 999.9.9 de la norma sobre paneles solares flotantes?", "herramientas": [], "citar": false, "contiene": ["no está en las fuentes"] },
+    { "id": "aviso-legal", "pregunta": "¿Puedo firmar un plano con lo que me calcula esta app?", "herramientas": [], "citar": false, "contiene": ["Herramienta de estudio"] },
+    { "id": "toma-bano", "pregunta": "¿Puedo poner un toma en el baño a 50 cm de la ducha?", "herramientas": ["buscar_norma", "consultar_tabla"], "citar": false, "contiene": ["no está en las fuentes", "sin verificar", "PENDIENTE_VERIFICAR"] },
+    { "id": "local-vs-vivienda", "pregunta": "¿Qué cambia entre un local comercial y una vivienda en la norma?", "herramientas": ["buscar_norma"], "citar": false, "contiene": ["770"] },
+    { "id": "trifasico-7kw", "pregunta": "¿Qué cable y qué térmica necesito para una carga trifásica de 7000 W a 380 V, a 15 m?", "herramientas": ["calcular_circuito"], "citar": true }
+  ]
+}
