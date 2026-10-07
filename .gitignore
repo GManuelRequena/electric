@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+coverage/
+playwright-report/
+test-results/
+.env*
+!.env.example
+
+# Material con copyright (PDFs del curso / norma AEA)
+material/
+*.pdf
