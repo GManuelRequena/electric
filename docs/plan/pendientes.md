@@ -25,6 +25,14 @@ Marcá cada punto cuando lo hayas revisado contra los PDFs, y pasá `verificado`
 - [ ] Resistividad a la temperatura de servicio; hoy se usa la del curso a 15 °C (P10).
 - [ ] Datos del curso usados como respaldo: Iz (Tabla 45), factores de temperatura (Tabla 46) y de conductores por caño (Tabla 47). Pueden tener errores de lectura del OCR (P14).
 
+### Fase 2 (proyectos): decisiones y datos a revisar
+
+- [ ] **Respuestas a las preguntas abiertas de la Fase 2** (P22): catálogo de elementos, valores por defecto de largos y símbolos del unifilar. Hoy son los del plan y los míos.
+- [ ] **Tomas exteriores → TUE**: la app las asigna a TUE porque la nota de la tabla dice "instalaciones a la intemperie" (P23).
+- [ ] **Circuitos mínimos por grado**: la app no completa circuitos mínimos porque la Tabla 770.7.II sigue en `null` (P3); el validador avisa `PENDIENTE_VERIFICAR`.
+- [ ] **Bocas mínimas**: dormitorio, lavadero, garage y exterior no tienen reglas cargadas (P4); el validador lo informa en vez de aprobar (P24).
+- [ ] **IUG con tomas derivadas**: se informa como advertencia, no error, porque la tabla de IUG lo admite con 2,5 mm² y DPMS 2200 VA (P25).
+
 ### Decisiones de la app que conviene que revises
 
 - [ ] Semáforo de caída: ámbar por encima del 90 % del límite (P17).
@@ -75,3 +83,15 @@ Se resuelven antes de cerrar la Fase 1 los marcados **[bloquea F1]** (P2 y P3); 
 - **P19 Iz en monofásico**: la Tabla 45 del curso es para tres cables por caño; se usa tal cual también para circuitos monofásicos (conservador). Aluminio: no hay tabla cargada, la calculadora avisa.
 - **P20 No hecho**: deploy en Vercel, prueba Lighthouse y prueba offline en un celular real (el modo avión se probó en Playwright).
 - **P21 TypeScript fijado en 6.x**: `typescript-eslint` todavía no soporta TypeScript 7.
+
+## Pendientes de la Fase 2
+
+- **P22 Preguntas abiertas sin respuesta del usuario**: (a) catálogo: se usan los 8 elementos del plan más los 22 artefactos provisorios (P11); faltan portero, timbre, TV/datos, bomba y calefón como elementos propios (la bomba y el calefón se cargan como artefacto "Otro"); (b) `metrosPorBoca` = 4 m y `metrosHastaTablero` = 5 m son valores míos (editables en la pestaña Tablero de cada proyecto, no son de la norma); (c) el unifilar dibuja el termomagnético y el diferencial con símbolos tipo IRAM 2010 / IEC hechos a mano, sin verificar contra la IRAM 2010-3 (no está en el repo ni se encontró en línea). Investigación en línea sobre (a) y (b): no se encontró una cifra confiable de metros por boca ni el texto de la Sección 771; hace falta el PDF.
+- **P23 Tomas exteriores**: `toma_exterior` se asigna a TUE por la nota de la tabla de tipos de circuito ("instalaciones a la intemperie"). Confirmar contra la Guía.
+- **P24 Reglas por ambiente incompletas**: sin mínimos cargados para dormitorio, lavadero, garage y exterior (P4), la validación solo informa que falta el dato. La cocina exige 2 TUG (P4, `verificado: false`).
+- **P25 IUG con tomas**: advertencia y no error (ver arriba). La asignación automática nunca los mezcla.
+- **P26 Demanda de los circuitos**: cada boca de luz suma 60 VA (sin el 2/3 de simultaneidad, igual que la Fase 1) y los TUG/TUE se calculan con la demanda mínima de la tabla (2200 / 3300 VA) o la carga real si es mayor. Todos con `verificado: false` (P1).
+- **P27 Límite de corriente para abrir otro circuito**: se usa el calibre máximo de protección del tipo (IUG 16 A, TUG 20 A, TUE 32 A) como tope de Ib. Revisar si es el criterio correcto.
+- **P28 Circuitos terminales siempre monofásicos a 220 V**: `Proyecto.sistema` es el de la acometida. Un artefacto de más de 20 A cae en ACU y se calcula igual en monofásico.
+- **P29 Ruta del proyecto**: se usa `/proyectos/ver?id=…` en lugar de `/proyectos/[id]` para que el service worker pueda servir la pantalla sin conexión con cualquier proyecto.
+- **P30 No hecho**: medir en el celular que una vivienda de 4 ambientes se carga en menos de 3 minutos; probar la app instalada sin conexión en un celular real.
