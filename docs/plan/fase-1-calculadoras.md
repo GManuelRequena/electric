@@ -158,6 +158,16 @@ Las fórmulas (corriente mono y trifásica, caída de tensión) tienen que coinc
 - En 390×844 no hay scroll horizontal y los botones miden ≥ 44px.
 - Cada número normativo en pantalla tiene su cita.
 
+## Ideas tomadas de la app de referencia
+Ver `docs/plan/referencia-calculadora-pro.md`. En esta fase se incorporan:
+- **Semáforo de caída de tensión** (verde / ámbar / rojo) con los límites de `caida-tension.json` según el tipo de tramo, no con 3% / 5% fijos.
+- **Autoajuste de la sección**: si la caída no cumple, el resultado propone la sección que cumple y muestra "con X mm² la caída sería Y%".
+- **Curva B / C / D sugerida** según el tipo de carga (resistiva/iluminación, general, motores). La regla sale del curso o la norma y se puede cambiar a mano.
+- **Capacidad de corte (kA)** de la térmica como dato configurable (por defecto desde `/ajustes`).
+- **Reserva opcional** (%) sobre Ib, desactivada por defecto. No usar el "FS 1.25" de la NEC como criterio de la AEA.
+- **Duplicar circuito** (en la calculadora por artefactos) para cargar rápido circuitos parecidos.
+- Fórmula de caída **con la sección, la resistividad y el cos φ** de cada artefacto (la referencia tiene errores en esto, no copiarla).
+
 ## Datos ya provistos por el usuario
 - URL del notebook de NotebookLM: `https://notebook.google.com/notebook/3542ef10-60ec-40f0-9614-6ba471b40320/preview`. Usarla como valor por defecto en `/ajustes` (editable). Ojo: el dominio habitual es `notebooklm.google.com`; si el link no abre, confirmarlo con el usuario.
 

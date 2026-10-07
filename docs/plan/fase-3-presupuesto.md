@@ -100,6 +100,26 @@ Un documento prolijo para entregar o enviar al cliente, generado desde el proyec
   4. Verificaciones según la norma, con citas.
   5. Presupuesto: materiales + mano de obra + total, validez de la oferta y condiciones de pago.
   6. Observaciones libres y aviso legal.
+- **Estructura detallada** (adaptada de la "Memoria técnica" de la app de referencia, ver `docs/plan/referencia-calculadora-pro.md`):
+  1. **Carátula**:
+     - cliente, n° de obra o informe, dirección, ciudad,
+     - instalador, matrícula, normativa aplicada (AEA 90364-7-770 + edición), fecha,
+     - logo.
+  2. **Objeto y alcance**: un texto estándar editable.
+  3. **Resumen ejecutivo**: potencia instalada, demanda (con simultaneidad), grado de electrificación y cantidad de circuitos.
+  4. **Ficha por circuito**:
+     - cuadro de cargas (artefacto, P unitaria, cantidad, subtotal; P total, Ib),
+     - tarjetas de térmica (In, curva, kA), conductor (sección, Iz, método, caída V/% con semáforo) y diferencial,
+     - **unifilar individual** (tablero → térmica → cable con L y caída → carga),
+     - cita de la norma de cada verificación.
+  5. **Cuadro consolidado**: una fila por circuito con su estado ✓/⚠.
+  6. **Despiece de materiales**: metros de fase / neutro / PE por sección, con **% de merma configurable**, protecciones y resto del cómputo.
+  7. **Presupuesto**: materiales + mano de obra + total, validez y condiciones.
+  8. **Consumo energético estimado** (kWh por día, mes y año), con la tarifa en ARS configurable. Opcional.
+  9. **Observaciones** (texto libre).
+  10. **Firmas**: cliente (nombre, DNI, fecha) y electricista (nombre, matrícula), con la **imagen de la firma** cargada en el perfil.
+  
+  Pie de página en cada hoja con obra, cliente y "Página N de M".
 - **Dos versiones**:
   - "Técnica", con el paso a paso.
   - "Cliente", resumida y sin fórmulas.

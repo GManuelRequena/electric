@@ -30,7 +30,15 @@ Cada bloque es independiente. Hacé uno por sesión y preguntale al usuario por 
 - Login (si no se hizo en la Fase 4) y `ownerId` en cada proyecto.
 - Si se suman más usuarios: revisar las licencias de contenido normativo antes de abrir la app.
 
-## 5.E Calidad de vida
+## 5.E Herramientas extra (ideas de la app de referencia)
+Cada una es una calculadora chica en `/calcular/herramientas/*`, con funciones puras en `src/dominio/calculo/` y sus tests:
+- Ley de Ohm y potencia (CC, CA mono y trifásica).
+- Corriente de cortocircuito estimada (Icc máx/mín) para elegir el poder de corte (kA). Requiere los datos de la red; preguntarle al usuario qué método usa el curso.
+- Consumo energético y costo (kWh → ARS, con la tarifa configurable).
+- Corrección del factor de potencia (kVAr del capacitor).
+- Dimensionado fotovoltaico básico (paneles y banco de baterías).
+
+## 5.F Calidad de vida
 - Modo oscuro.
 - Compartir un cálculo como link (estado codificado en la URL).
 - Historial de cálculos.

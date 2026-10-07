@@ -24,3 +24,7 @@ Las fases 0 y 1 se pueden solapar: la 1 puede arrancar con las tablas marcadas `
 ## Visión general
 
 [00-vision.md](00-vision.md)
+
+## Referencias
+
+- [Análisis de "Calculadora Eléctrica Pro"](referencia-calculadora-pro.md): funciones, estructura del informe y errores a evitar.
