@@ -2,12 +2,343 @@
   "id": "aea770.artefactosTipicos",
   "titulo": "Artefactos típicos (no normativo)",
   "fuente": {
-    "norma": "AEA 90364-7-770",
-    "edicion": "2017",
-    "referencia": "Curso / usuario",
-    "documento": "MODULO_6.pdf"
+    "norma": "No normativo",
+    "edicion": "s/d",
+    "referencia": "Potencia orientativa de chapa típica",
+    "documento": "Lista provisoria propuesta por Claude"
   },
   "verificado": false,
-  "nota": "No normativo. PENDIENTE: cargar desde los Módulos 1 a 5 del curso o que lo dicte el usuario.",
-  "filas": []
+  "nota": "No normativo. Lista provisoria: potencias orientativas, pendientes de reemplazo por datos del curso o del usuario (pendientes.md P11).",
+  "filas": [
+    {
+      "nombre": "Luminaria LED 10 W",
+      "potenciaW": 10,
+      "cosFi": 0.9,
+      "requiereCircuitoPropio": false,
+      "categoria": "iluminacion",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Lámpara incandescente 60 W",
+      "potenciaW": 60,
+      "cosFi": 1,
+      "requiereCircuitoPropio": false,
+      "categoria": "iluminacion",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Ventilador de techo",
+      "potenciaW": 80,
+      "cosFi": 0.9,
+      "requiereCircuitoPropio": false,
+      "categoria": "iluminacion",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Televisor LED",
+      "potenciaW": 100,
+      "cosFi": 0.9,
+      "requiereCircuitoPropio": false,
+      "categoria": "toma",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Computadora de escritorio",
+      "potenciaW": 250,
+      "cosFi": 0.9,
+      "requiereCircuitoPropio": false,
+      "categoria": "toma",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Heladera con freezer",
+      "potenciaW": 150,
+      "cosFi": 0.8,
+      "requiereCircuitoPropio": false,
+      "categoria": "toma",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Freezer",
+      "potenciaW": 200,
+      "cosFi": 0.8,
+      "requiereCircuitoPropio": false,
+      "categoria": "toma",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Microondas",
+      "potenciaW": 1200,
+      "cosFi": 1,
+      "requiereCircuitoPropio": false,
+      "categoria": "toma",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Tostadora",
+      "potenciaW": 800,
+      "cosFi": 1,
+      "requiereCircuitoPropio": false,
+      "categoria": "toma",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Plancha",
+      "potenciaW": 1000,
+      "cosFi": 1,
+      "requiereCircuitoPropio": false,
+      "categoria": "toma",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Secador de pelo",
+      "potenciaW": 1800,
+      "cosFi": 1,
+      "requiereCircuitoPropio": false,
+      "categoria": "toma",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Pava eléctrica",
+      "potenciaW": 2000,
+      "cosFi": 1,
+      "requiereCircuitoPropio": false,
+      "categoria": "toma",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Caloventor",
+      "potenciaW": 2000,
+      "cosFi": 1,
+      "requiereCircuitoPropio": false,
+      "categoria": "toma",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Lavarropas",
+      "potenciaW": 2000,
+      "cosFi": 0.9,
+      "requiereCircuitoPropio": true,
+      "categoria": "fijo",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Lavavajillas",
+      "potenciaW": 1800,
+      "cosFi": 0.9,
+      "requiereCircuitoPropio": true,
+      "categoria": "fijo",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Aire acondicionado 3000 frigorías",
+      "potenciaW": 1200,
+      "cosFi": 0.9,
+      "requiereCircuitoPropio": true,
+      "categoria": "fijo",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Aire acondicionado 4500 frigorías",
+      "potenciaW": 1800,
+      "cosFi": 0.9,
+      "requiereCircuitoPropio": true,
+      "categoria": "fijo",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Termotanque eléctrico",
+      "potenciaW": 1500,
+      "cosFi": 1,
+      "requiereCircuitoPropio": true,
+      "categoria": "fijo",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Ducha eléctrica",
+      "potenciaW": 3500,
+      "cosFi": 1,
+      "requiereCircuitoPropio": true,
+      "categoria": "fijo",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Horno eléctrico",
+      "potenciaW": 2500,
+      "cosFi": 1,
+      "requiereCircuitoPropio": true,
+      "categoria": "fijo",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Anafe eléctrico",
+      "potenciaW": 3000,
+      "cosFi": 1,
+      "requiereCircuitoPropio": true,
+      "categoria": "fijo",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    },
+    {
+      "nombre": "Bomba de agua 1/2 HP",
+      "potenciaW": 750,
+      "cosFi": 0.8,
+      "requiereCircuitoPropio": true,
+      "categoria": "fijo",
+      "fuente": {
+        "norma": "No normativo",
+        "edicion": "s/d",
+        "referencia": "Potencia orientativa de chapa típica",
+        "documento": "Lista provisoria propuesta por Claude"
+      },
+      "verificado": false,
+      "nota": "PENDIENTE_VERIFICAR: potencia orientativa; reemplazar por el dato de chapa o del curso."
+    }
+  ]
 }

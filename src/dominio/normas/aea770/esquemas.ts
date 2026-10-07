@@ -150,6 +150,7 @@ export const esquemaArtefactosTipicos = tabla(
     potenciaW: z.number().positive(),
     cosFi: z.number().positive().max(1),
     requiereCircuitoPropio: z.boolean(),
+    categoria: z.enum(["iluminacion", "toma", "fijo"]),
     ...meta,
   }),
 );

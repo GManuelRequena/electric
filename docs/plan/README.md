@@ -13,7 +13,7 @@ Una fase por sesión. Revisá el resultado en el celular antes de pasar a la sig
 ## Orden y estado
 
 - [x] [Fase 0: Corpus y tablas de la norma](fase-0-corpus.md)
-- [ ] [Fase 1: Calculadoras + PWA](fase-1-calculadoras.md)
+- [x] [Fase 1: Calculadoras + PWA](fase-1-calculadoras.md)
 - [ ] [Fase 2: Proyectos con catálogo y circuitos según la norma](fase-2-proyectos.md)
 - [ ] [Fase 3: Presupuesto de materiales](fase-3-presupuesto.md)
 - [ ] [Fase 4: IA (chat con la norma)](fase-4-ia.md)
