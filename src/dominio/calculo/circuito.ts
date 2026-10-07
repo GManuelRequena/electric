@@ -1,4 +1,4 @@
-import { caidaTension, tensionEnExtremo } from "./caida";
+import { tensionEnExtremo } from "./caida";
 import { corrienteDesdePotencia } from "./corriente";
 import { diferencialPara, sugerirCurva } from "./proteccion";
 import { elegirSeccion } from "./seccion";

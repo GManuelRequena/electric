@@ -38,7 +38,7 @@ export function elegirSeccion(e: EntradaSeccion, norma: Norma = aea770): Resulta
   if (elegibles.length === 0) return { error: `Ninguna sección cargada alcanza la mínima de ${fmt(e.minimaMm2)} mm².` };
 
   // 1) Mínima de la norma → 2) Iz ≥ In ≥ Ib
-  let porCorriente = elegibles.find((c) => {
+  const porCorriente = elegibles.find((c) => {
     const t = elegirTermica(e.ibA, c.corrienteAdmisibleA, norma);
     return !("error" in t) && (e.calibreMaxTipoA == null || t.inA <= e.calibreMaxTipoA);
   });
