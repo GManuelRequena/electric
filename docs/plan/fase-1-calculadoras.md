@@ -40,7 +40,7 @@ export interface Artefacto {
 
 export interface EntradaCircuito {
   sistema: Sistema;
-  tensionV: number;          // de la Fase 0 (pregunta abierta: 220/230)
+  tensionV: number;          // nominal: 220 V mono / 380 V tri (definido por el curso); editable
   artefactos: Artefacto[];
   tipoCircuito?: TipoCircuito; // si no viene, se sugiere
   largoM?: number;           // si falta, no se verifica la caída (avisar)
@@ -169,6 +169,10 @@ Ver `docs/plan/referencia-calculadora-pro.md`. En esta fase se incorporan:
 - Fórmula de caída **con la sección, la resistividad y el cos φ** de cada artefacto (la referencia tiene errores en esto, no copiarla).
 
 ## Datos ya provistos por el usuario
+- **Tensiones nominales del curso: 220 V monofásica y 380 V trifásica.** Son los valores por defecto en todos los cálculos y en el informe.
+  - Se asume la red estable en esos valores nominales.
+  - En `/ajustes` se pueden cambiar (por ejemplo, si un cálculo pide 230/400 V).
+  - En la calculadora de caída de tensión hay un campo opcional **"tensión medida en el origen"** para cuando en la práctica la red llega un poco distinta. Si se carga, la app muestra además la tensión real estimada en el extremo del circuito. La verificación contra el límite de la norma sigue siendo en % sobre la tensión nominal, y se aclara en el paso a paso.
 - URL del notebook de NotebookLM: `https://notebook.google.com/notebook/3542ef10-60ec-40f0-9614-6ba471b40320/preview`. Usarla como valor por defecto en `/ajustes` (editable). Ojo: el dominio habitual es `notebooklm.google.com`; si el link no abre, confirmarlo con el usuario.
 
 ## Preguntas abiertas

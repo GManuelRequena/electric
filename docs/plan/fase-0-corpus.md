@@ -89,7 +89,6 @@ Por cada tabla: buscá en el Módulo 6 (o en los Módulos 1 a 5 si la reproducen
 
 ## Preguntas abiertas (hacerlas antes de empezar)
 - ¿Qué edición de la AEA 90364-7-770 usa el curso?
-- ¿Tensión de referencia monofásica 220 V o 230 V? ¿Y trifásica 380 V o 400 V?
 - ¿Hay ejercicios resueltos en los módulos? Pedir páginas (se usan como tests en la Fase 1).
 
 ## Al terminar
