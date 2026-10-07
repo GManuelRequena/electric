@@ -5,7 +5,7 @@ const tablas = Object.entries(aea770);
 
 describe("tablas AEA 770", () => {
   it("todas las tablas validan su esquema (el import ya parsea)", () => {
-    expect(tablas).toHaveLength(14);
+    expect(tablas).toHaveLength(16);
     for (const [, t] of tablas) expect(t.id).toMatch(/^aea770\./);
   });
 

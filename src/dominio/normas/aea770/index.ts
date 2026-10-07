@@ -4,6 +4,8 @@ import bocasJson from "./bocas-minimas-ambiente.json";
 import seccionesJson from "./secciones-minimas.json";
 import corrientesJson from "./corrientes-admisibles.json";
 import factoresJson from "./factores-agrupamiento.json";
+import factoresTempJson from "./factores-temperatura.json";
+import factoresCanoJson from "./factores-conductores-por-cano.json";
 import calibresMaxJson from "./calibres-max-proteccion.json";
 import calibresJson from "./calibres-normalizados.json";
 import curvasJson from "./curvas-disparo.json";
@@ -23,6 +25,8 @@ import {
   esquemaCurvasDisparo,
   esquemaDiferenciales,
   esquemaFactoresAgrupamiento,
+  esquemaFactoresConductoresPorCano,
+  esquemaFactoresTemperatura,
   esquemaGradosElectrificacion,
   esquemaResistividades,
   esquemaSeccionesMinimas,
@@ -37,6 +41,8 @@ export const aea770 = {
   seccionesMinimas: esquemaSeccionesMinimas.parse(seccionesJson),
   corrientesAdmisibles: esquemaCorrientesAdmisibles.parse(corrientesJson),
   factoresAgrupamiento: esquemaFactoresAgrupamiento.parse(factoresJson),
+  factoresTemperatura: esquemaFactoresTemperatura.parse(factoresTempJson),
+  factoresConductoresPorCano: esquemaFactoresConductoresPorCano.parse(factoresCanoJson),
   calibresMaxProteccion: esquemaCalibresMaxProteccion.parse(calibresMaxJson),
   calibresNormalizados: esquemaCalibresNormalizados.parse(calibresJson),
   curvasDisparo: esquemaCurvasDisparo.parse(curvasJson),

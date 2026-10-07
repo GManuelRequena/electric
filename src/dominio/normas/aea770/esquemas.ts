@@ -85,6 +85,19 @@ export const esquemaFactoresAgrupamiento = tabla(
   z.object({ circuitosPorCano: z.number().int().min(2), factor: z.number().positive().max(1), ...meta }),
 );
 
+export const esquemaFactoresTemperatura = tabla(
+  z.object({
+    temperaturaAmbienteC: z.number(),
+    factorEnCanos: z.number().positive(),
+    factorAlAire: z.number().positive(),
+    ...meta,
+  }),
+);
+
+export const esquemaFactoresConductoresPorCano = tabla(
+  z.object({ conductoresEnCano: z.string(), factor: z.number().positive().max(1), ...meta }),
+);
+
 export const esquemaCalibresMaxProteccion = tabla(
   z.object({
     seccionMm2: z.number().positive(),
@@ -121,7 +134,7 @@ export const esquemaCaidaTension = tabla(z.object({ caso: z.string(), maxPorcent
 export const esquemaResistividades = tabla(
   z.object({
     material: z.enum(["cobre", "aluminio"]),
-    temperaturaC: z.number(),
+    temperaturaC: z.number().nullable(),
     resistividadOhmMm2PorM: z.number().positive(),
     ...meta,
   }),

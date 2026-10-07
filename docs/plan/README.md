@@ -23,6 +23,8 @@ Una fase por sesión. Revisá el resultado en el celular antes de pasar a la sig
 
 Las fases 0 y 1 se pueden solapar: la 1 puede arrancar con las tablas marcadas `verificado: false` mientras la 0 las completa.
 
+Pendientes de la Fase 0: [pendientes.md](pendientes.md)
+
 ## Visión general
 
 [00-vision.md](00-vision.md)

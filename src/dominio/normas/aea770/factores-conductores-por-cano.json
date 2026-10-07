@@ -1,0 +1,54 @@
+{
+  "id": "aea770.factoresConductoresPorCano",
+  "titulo": "Factor de agrupamiento por cantidad de conductores en un caño",
+  "fuente": {
+    "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+    "edicion": "s/d",
+    "referencia": "Tabla Nº 47",
+    "documento": "MODULO_4_EI.pdf",
+    "pagina": 306
+  },
+  "verificado": false,
+  "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). ",
+  "filas": [
+    {
+      "conductoresEnCano": "1 a 3",
+      "factor": 1,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 47",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 306
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Distinto criterio que factores-agrupamiento (circuitos por caño, Guía AEA 770)."
+    },
+    {
+      "conductoresEnCano": "4 a 6",
+      "factor": 0.8,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 47",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 306
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Distinto criterio que factores-agrupamiento (circuitos por caño, Guía AEA 770)."
+    },
+    {
+      "conductoresEnCano": "7 a 9",
+      "factor": 0.7,
+      "fuente": {
+        "norma": "Curso Electricista Instalador (Manual del Instalador Electricista, Cat. III)",
+        "edicion": "s/d",
+        "referencia": "Tabla Nº 47",
+        "documento": "MODULO_4_EI.pdf",
+        "pagina": 306
+      },
+      "verificado": false,
+      "nota": "NO ES AEA 770 2017: valor del curso (la edición de la reglamentación en la que se basa no está confirmada; el Módulo 4 usa 150 VA/boca y otros criterios distintos de la Guía 2017). Distinto criterio que factores-agrupamiento (circuitos por caño, Guía AEA 770)."
+    }
+  ]
+}
