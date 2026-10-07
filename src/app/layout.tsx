@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { AplicarTema, SCRIPT_TEMA } from "@/componentes/AplicarTema";
 import { AvisoLegal } from "@/componentes/AvisoLegal";
 import { NavInferior } from "@/componentes/NavInferior";
 import { RegistrarSW } from "@/componentes/RegistrarSW";
@@ -20,7 +21,10 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es-AR">
+    <html lang="es-AR" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: SCRIPT_TEMA }} />
+      </head>
       <body>
         <main className="mx-auto min-h-dvh max-w-2xl px-4 pt-4 pb-40">
           {children}
@@ -28,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </main>
         <NavInferior />
         <RegistrarSW />
+        <AplicarTema />
       </body>
     </html>
   );

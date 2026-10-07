@@ -145,7 +145,7 @@ export function EditorPresupuesto() {
       </section>
 
       <section aria-label="Exportar" className="flex flex-col gap-2">
-        <Link href={`/presupuesto/informe?id=${p.id}`} className="flex min-h-12 items-center justify-center rounded-xl bg-amber-500 px-4 font-semibold text-slate-900 active:bg-amber-600">
+        <Link href={`/presupuesto/informe?id=${p.id}`} className="flex min-h-12 items-center justify-center rounded-xl bg-amber-500 px-4 font-semibold text-slate-950 active:bg-amber-600">
           Exportar PDF (informe)
         </Link>
         <Boton variante="secundario" onClick={exportarExcel}>Exportar Excel</Boton>

@@ -68,6 +68,8 @@ export function useAlmacen<T>(clave: string, porDefecto: T): [T, (v: T | ((prev:
   return [valor, actualizar, listo];
 }
 
+export type Tema = "auto" | "claro" | "oscuro";
+
 export interface Ajustes {
   tensionMonoV: number;
   tensionTriV: number;
@@ -75,6 +77,7 @@ export interface Ajustes {
   notebookUrl: string;
   reservaPct: number;
   capacidadCorteKa: number;
+  tema: Tema;
 }
 
 export const AJUSTES_POR_DEFECTO: Ajustes = {
@@ -84,6 +87,7 @@ export const AJUSTES_POR_DEFECTO: Ajustes = {
   notebookUrl: "https://notebook.google.com/notebook/3542ef10-60ec-40f0-9614-6ba471b40320/preview",
   reservaPct: 0,
   capacidadCorteKa: 6,
+  tema: "auto",
 };
 
 export interface CalculoGuardado {
@@ -97,5 +101,9 @@ export interface CalculoGuardado {
 export function registrarCalculo(c: Omit<CalculoGuardado, "id" | "fecha">): void {
   const lista = leerLista<CalculoGuardado>("ultimos");
   const nuevo: CalculoGuardado = { ...c, id: String(Date.now()), fecha: new Date().toISOString() };
-  guardar("ultimos", [nuevo, ...lista.filter((x) => !(x.titulo === c.titulo && x.resumen === c.resumen))].slice(0, 8));
+  guardar("ultimos", [nuevo, ...lista.filter((x) => !(x.titulo === c.titulo && x.resumen === c.resumen))].slice(0, 20));
+}
+
+export function borrarHistorial(): void {
+  guardar("ultimos", []);
 }

@@ -18,6 +18,12 @@ Una fase por sesión. Revisá el resultado en el celular antes de pasar a la sig
 - [x] [Fase 3: Presupuesto de materiales](fase-3-presupuesto.md)
 - [x] [Fase 4: IA (chat con la norma)](fase-4-ia.md)
 - [ ] [Fase 5: Extras y escalado](fase-5-extras.md)
+  - [ ] 5.A Plano en grilla
+  - [ ] 5.B Otras secciones de la norma
+  - [ ] 5.C Proveedor de precios real
+  - [ ] 5.D Nube y multiusuario
+  - [x] 5.E Herramientas extra (Ohm, potencia CA, consumo y costo, factor de potencia, fotovoltaico; falta Icc, ver P53)
+  - [x] 5.F Calidad de vida (modo oscuro, compartir por link, historial, plantillas)
 
 > Fase 0: estructura y loaders completos; varias tablas quedan parciales o `verificado: false` (ver `npm run norma:pendientes`).
 

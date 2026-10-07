@@ -73,7 +73,7 @@ export function Unifilar({ raiz }: { raiz: NodoUnifilar }) {
           Ajustar
         </button>
       </div>
-      <div className="max-h-[70dvh] overflow-auto rounded-xl border border-slate-200 bg-white" style={{ touchAction: "pan-x pan-y pinch-zoom" }}>
+      <div className="max-h-[70dvh] overflow-auto rounded-xl border border-slate-200 bg-white fondo-claro" style={{ touchAction: "pan-x pan-y pinch-zoom" }}>
         <svg role="img" aria-label="Diagrama unifilar" viewBox={`0 0 ${ANCHO} ${alto}`} width={ANCHO * zoom} height={alto * zoom} className="block">
           <Caja x={20} y={10} w={320} h={36} nodo={raiz} />
           <line x1={40} y1={46} x2={40} y2={72} stroke="#334155" strokeWidth={2} />
