@@ -31,6 +31,8 @@ Las fases 0 y 1 se pueden solapar: la 1 puede arrancar con las tablas marcadas `
 
 Pendientes de la Fase 0: [pendientes.md](pendientes.md)
 
+Estado actual para retomar: [estado.md](estado.md). Checklist al cerrar cada fase: [verificacion-fase.md](verificacion-fase.md).
+
 ## Visión general
 
 [00-vision.md](00-vision.md)
