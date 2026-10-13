@@ -21,7 +21,7 @@ export function Selector<T extends string>({ etiqueta, valor, opciones, onCambio
         id={id}
         value={valor}
         onChange={(e) => onCambio(e.target.value as T)}
-        className="h-12 rounded-lg border border-slate-300 bg-white px-3 text-base outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-200"
+        className="h-12 rounded-lg border border-slate-300 bg-superficie px-3 text-base outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-200"
       >
         {opciones.map((o) => (
           <option key={o.valor} value={o.valor}>
@@ -46,7 +46,7 @@ export function Segmentado<T extends string>({ etiqueta, valor, opciones, onCamb
             type="button"
             aria-pressed={valor === o.valor}
             onClick={() => onCambio(o.valor)}
-            className={`h-11 flex-1 rounded-md px-2 text-sm font-medium ${valor === o.valor ? "bg-white shadow text-slate-900" : "text-slate-600"}`}
+            className={`h-11 flex-1 rounded-md px-2 text-sm font-medium ${valor === o.valor ? "bg-superficie shadow text-slate-900" : "text-texto-suave"}`}
           >
             {o.texto}
           </button>

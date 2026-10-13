@@ -20,7 +20,7 @@ export function TarjetaResultado({ r }: { r: ResultadoCircuito }) {
     <div
       aria-live="polite"
       data-testid="resumen"
-      className={`anim-in rounded-xl border-2 bg-white px-4 py-3 shadow-lg ${r.cumple ? "border-emerald-500" : "border-amber-500"}`}
+      className={`anim-in rounded-xl border-2 bg-superficie px-4 py-3 shadow-lg ${r.cumple ? "border-emerald-500" : "border-amber-500"}`}
     >
       <p className="flex items-center gap-2 text-lg font-bold">
         <span aria-hidden>{r.cumple ? "✓" : "⚠"}</span>

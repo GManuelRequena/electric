@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { EsqueletoTarjetas } from "@/componentes/Esqueleto";
 import { Pagina } from "@/componentes/Pagina";
 import type { Proyecto } from "@/dominio/proyecto/tipos";
 import { listarProyectos } from "@/integraciones/persistencia/proyectos";
@@ -22,26 +23,26 @@ export default function Presupuesto() {
 
   return (
     <Pagina titulo="Presupuesto">
-      {lista === null && <p className="text-slate-600">Cargando…</p>}
+      {lista === null && <EsqueletoTarjetas cantidad={3} alto="h-16" />}
       {lista?.length === 0 && (
-        <p className="rounded-xl bg-white p-4 text-slate-600">
+        <p className="rounded-xl bg-superficie p-4 text-texto-suave">
           Todavía no hay proyectos. Armá uno en <Link href="/proyectos" className="font-semibold underline">Proyectos</Link> y acá sale el cómputo de materiales.
         </p>
       )}
-      {lista && lista.length > 0 && <p className="text-sm text-slate-600">Elegí un proyecto para ver el cómputo de materiales y armar el presupuesto.</p>}
+      {lista && lista.length > 0 && <p className="text-sm text-texto-suave">Elegí un proyecto para ver el cómputo de materiales y armar el presupuesto.</p>}
       <ul aria-label="Proyectos para presupuestar" className="anim-list flex flex-col gap-2">
         {lista?.map((p) => (
           <li key={p.id}>
-            <Link href={`/presupuesto/ver?id=${p.id}`} className="flex min-h-16 flex-col justify-center rounded-xl border border-slate-200 bg-white px-4 py-3">
+            <Link href={`/presupuesto/ver?id=${p.id}`} className="flex min-h-16 flex-col justify-center rounded-xl border border-linea bg-superficie px-4 py-3">
               <span className="text-lg font-semibold">{p.nombre}</span>
-              <span className="text-sm text-slate-600">
+              <span className="text-sm text-texto-suave">
                 {p.superficieM2} m² · {p.circuitos.length} {p.circuitos.length === 1 ? "circuito" : "circuitos"}
               </span>
             </Link>
           </li>
         ))}
       </ul>
-      <Link href="/ajustes/precios" className="flex min-h-12 items-center justify-center rounded-xl border border-slate-300 bg-white px-4 font-semibold text-slate-800">
+      <Link href="/ajustes/precios" className="flex min-h-12 items-center justify-center rounded-xl border border-slate-300 bg-superficie px-4 font-semibold text-slate-800">
         Lista de precios
       </Link>
     </Pagina>

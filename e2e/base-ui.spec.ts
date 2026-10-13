@@ -43,3 +43,21 @@ test("con movimiento reducido no hay animaciones", async ({ page }) => {
   const animacion = await page.locator("ul.anim-list > li").first().evaluate((el) => getComputedStyle(el).animationName);
   expect(animacion).toBe("none");
 });
+
+for (const [ruta, etiqueta] of [
+  ["/calcular/caida-tension", "Corriente"],
+  ["/calcular/vivienda", "Superficie cubierta"],
+  ["/calcular/herramientas/ohm", "Tensión"],
+  ["/calcular/herramientas/potencia", "Corriente"],
+  ["/calcular/herramientas/consumo", "Potencia del equipo"],
+  ["/calcular/herramientas/factor-potencia", "Potencia activa de la carga"],
+  ["/calcular/herramientas/fotovoltaico", "Consumo diario"],
+] as const) {
+  test(`${ruta}: el dato principal arranca enfocado y es grande`, async ({ page }) => {
+    await page.goto(ruta);
+    const campo = page.getByLabel(etiqueta, { exact: true });
+    await expect(campo).toBeFocused();
+    const caja = await campo.boundingBox();
+    expect(caja?.height).toBeGreaterThanOrEqual(44);
+  });
+}

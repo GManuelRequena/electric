@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { EsqueletoPagina } from "@/componentes/Esqueleto";
 import { useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import { Boton } from "@/componentes/Boton";
@@ -32,7 +33,7 @@ export function EditorPresupuesto() {
   const lineasComputo = useMemo(() => (p && datos ? calcularComputo(p, datos.config) : []), [p, datos]);
   const presupuesto = useMemo(() => (p && datos ? armarPresupuesto(lineasComputo, precios, datos.manoDeObra, p, { cotizacionUsd: datos.cotizacionUsd }) : undefined), [p, datos, lineasComputo, precios]);
 
-  if (p === undefined || datos === undefined || !presupuesto) return <p className="p-4 text-slate-600">Cargando…</p>;
+  if (p === undefined || datos === undefined || !presupuesto) return <EsqueletoPagina tarjetas={3} alto="h-16" />;
   if (p === null) {
     return (
       <Pagina titulo="Presupuesto" atras="/presupuesto">

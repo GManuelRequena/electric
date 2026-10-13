@@ -64,9 +64,14 @@ No cambia ningún cálculo ni ningún valor normativo. `src/dominio/**` no se to
 
 ## Estado
 
-Hecho: tokens, `.anim-*`, `Esqueleto`, `BarraProgreso`, `Sidebar`, `NavInferior` con botón central, `loading.tsx` global, `.barra-fija`, `CampoNumero principal` en `/calcular/rapida`.
+Hecho:
+- Tokens de color y de movimiento, `.anim-*`, `.barra-fija`, `Esqueleto`, `EsqueletoTarjetas`, `EsqueletoPagina`, `BarraProgreso`, `Sidebar` y `NavInferior` con botón central.
+- `loading.tsx` global y con forma propia en `/proyectos`, `/presupuesto`, `/ajustes` y `/consultar`. Los textos "Cargando…" pasaron a esqueletos.
+- `CampoNumero principal` (grande y con foco) en todas las calculadoras y herramientas.
+- `.anim-list` en las listas de tarjetas y en el paso a paso.
+- Tokens semánticos aplicados a los componentes base (`Boton`, `CampoNumero`, `Selector`, `TarjetaResultado`, `PasoAPaso`, `Pagina`) y a las pantallas de lista. `.fondo-claro` fija también los tokens nuevos.
 
-Pendiente: `loading.tsx` con forma propia por ruta, `CampoNumero principal` en las demás calculadoras, `.anim-list` en las listas restantes y migrar pantallas a los tokens semánticos.
+Fuera de esta fase (decisión de alcance): el editor de proyecto, el plano en grilla y el unifilar conservan sus clases `slate-*`; el modo oscuro los cubre por las variables de Tailwind. Se migran de a poco cuando se toquen.
 
 ## Preguntas abiertas (resueltas)
 

@@ -70,7 +70,7 @@ export default function Rapida() {
         <>
           <DetalleCircuito r={r} />
           <BotonConsultar pregunta="¿Está bien este circuito según la AEA 90364?" contexto={`Carga de ${valor} ${dato}, ${sistema}. Cable ${fmt(r.seccionMm2)} mm², térmica ${r.termicaA} A curva ${r.curva}.`} />
-          <div className="barra-fija mx-auto max-w-2xl px-4 pb-2">
+          <div className="barra-fija mx-auto max-w-2xl px-4 pb-6">
             <TarjetaResultado r={r} />
           </div>
         </>

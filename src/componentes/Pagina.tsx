@@ -5,7 +5,7 @@ export function Pagina({ titulo, atras, children }: { titulo: string; atras?: st
     <div className="screen-in flex flex-col gap-4">
       <header className="flex items-center gap-2">
         {atras && (
-          <Link href={atras} aria-label="Volver" className="flex size-11 items-center justify-center rounded-lg text-2xl text-slate-600">
+          <Link href={atras} aria-label="Volver" className="flex size-11 items-center justify-center rounded-lg text-2xl text-texto-suave">
             ‹
           </Link>
         )}

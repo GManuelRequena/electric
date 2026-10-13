@@ -50,6 +50,14 @@
 .fondo-claro {
   color-scheme: light;
   color: #0f172a;
+  --color-marca: #f59e0b;
+  --color-marca-fuerte: #b45309;
+  --color-marca-suave: #fffbeb;
+  --color-superficie: #ffffff;
+  --color-superficie-hundida: #f1f5f9;
+  --color-linea: #e2e8f0;
+  --color-texto: #0f172a;
+  --color-texto-suave: #475569;
   --color-white: #fff;
   --color-slate-50: #f8fafc;
   --color-slate-100: #f1f5f9;

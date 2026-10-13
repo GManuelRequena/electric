@@ -22,7 +22,7 @@ export default function Consumo() {
 
   return (
     <Pagina titulo="Consumo y costo" atras="/calcular/herramientas">
-      <CampoNumero etiqueta="Potencia del equipo" unidad="W" valor={campos.potencia} onCambio={poner("potencia")} />
+      <CampoNumero principal etiqueta="Potencia del equipo" unidad="W" valor={campos.potencia} onCambio={poner("potencia")} />
       <CampoNumero etiqueta="Horas de uso por día" unidad="h" valor={campos.horas} onCambio={poner("horas")} />
       <CampoNumero etiqueta="Días de uso por mes" valor={campos.dias} onCambio={poner("dias")} />
       <CampoNumero etiqueta="Tarifa" unidad="$/kWh" valor={campos.tarifa} onCambio={poner("tarifa")} ayuda="Tomala de tu factura; no incluye impuestos ni cargos fijos." />

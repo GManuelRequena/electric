@@ -136,7 +136,7 @@ export default function CaidaTension() {
       <div className="flex flex-col gap-3">
         <Segmentado etiqueta="Sistema" valor={sistema} opciones={[{ valor: "monofasico", texto: "Monofásico" }, { valor: "trifasico", texto: "Trifásico" }]} onCambio={setSistema} />
         <Segmentado etiqueta="Dato de la carga" valor={dato} opciones={[{ valor: "A", texto: "Corriente (A)" }, { valor: "W", texto: "Potencia (W)" }]} onCambio={(d) => { setDato(d); setValor(""); }} />
-        <CampoNumero etiqueta={dato === "A" ? "Corriente" : "Potencia"} unidad={dato} valor={valor} onCambio={setValor} />
+        <CampoNumero principal etiqueta={dato === "A" ? "Corriente" : "Potencia"} unidad={dato} valor={valor} onCambio={setValor} />
         {dato === "W" && <CampoNumero etiqueta="cos φ" valor={cos} onCambio={setCos} />}
         {dato === "A" && <CampoNumero etiqueta="cos φ" valor={cos} onCambio={setCos} ayuda="1 para cargas resistivas." />}
         {modo !== "largo" && <CampoNumero etiqueta="Largo del tramo (ida)" unidad="m" valor={largo} onCambio={setLargo} />}

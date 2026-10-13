@@ -22,7 +22,7 @@ export default function FactorPotencia() {
 
   return (
     <Pagina titulo="Factor de potencia" atras="/calcular/herramientas">
-      <CampoNumero etiqueta="Potencia activa de la carga" unidad="W" valor={campos.potencia} onCambio={poner("potencia")} />
+      <CampoNumero principal etiqueta="Potencia activa de la carga" unidad="W" valor={campos.potencia} onCambio={poner("potencia")} />
       <CampoNumero etiqueta="cos φ actual" valor={campos.cos1} onCambio={poner("cos1")} />
       <CampoNumero etiqueta="cos φ objetivo" valor={campos.cos2} onCambio={poner("cos2")} ayuda="El valor objetivo lo fija la distribuidora o tu criterio; la app no asume uno normativo." />
       {error && <ErrorHerramienta mensaje={error} />}

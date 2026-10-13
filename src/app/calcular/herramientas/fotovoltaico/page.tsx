@@ -24,7 +24,7 @@ export default function Fotovoltaico() {
   return (
     <Pagina titulo="Fotovoltaico básico" atras="/calcular/herramientas">
       <AvisoNoVerificado>Dimensionado orientativo con datos tuyos o del fabricante. No verifica reglamentación de instalaciones fotovoltaicas.</AvisoNoVerificado>
-      <CampoNumero etiqueta="Consumo diario" unidad="Wh" valor={campos.consumo} onCambio={poner("consumo")} />
+      <CampoNumero principal etiqueta="Consumo diario" unidad="Wh" valor={campos.consumo} onCambio={poner("consumo")} />
       <CampoNumero etiqueta="Horas sol pico (HSP)" unidad="h" valor={campos.hsp} onCambio={poner("hsp")} ayuda="Del lugar y de la época más desfavorable." />
       <CampoNumero etiqueta="Potencia de cada panel" unidad="Wp" valor={campos.panel} onCambio={poner("panel")} />
       <CampoNumero etiqueta="Rendimiento del sistema" valor={campos.rend} onCambio={poner("rend")} ayuda="Entre 0 y 1: pérdidas de cables, regulador, temperatura y suciedad." />

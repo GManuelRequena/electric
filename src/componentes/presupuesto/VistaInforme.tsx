@@ -1,6 +1,7 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
+import { EsqueletoPagina } from "@/componentes/Esqueleto";
 import { useMemo, useState } from "react";
 import { AvisoLegal } from "@/componentes/AvisoLegal";
 import { AvisoNoVerificado } from "@/componentes/AvisoNoVerificado";
@@ -47,7 +48,7 @@ export function VistaInforme() {
     });
   }, [p, datos, perfil, perfilListo, precios, version, apagadas]);
 
-  if (p === undefined || !informe) return <p className="p-4 text-slate-600">Cargando…</p>;
+  if (p === undefined || !informe) return <EsqueletoPagina tarjetas={3} alto="h-16" />;
   if (p === null) {
     return (
       <Pagina titulo="Informe" atras="/presupuesto">

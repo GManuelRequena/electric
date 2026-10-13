@@ -28,7 +28,7 @@ export default function Potencia() {
     <Pagina titulo="Potencia en CA" atras="/calcular/herramientas">
       <Segmentado etiqueta="Sistema" valor={sistema} opciones={[{ valor: "monofasico", texto: "Monofásico" }, { valor: "trifasico", texto: "Trifásico" }]} onCambio={poner("sistema")} />
       <Segmentado etiqueta="Dato de la carga" valor={dato} opciones={[{ valor: "A", texto: "Corriente (A)" }, { valor: "W", texto: "Potencia (W)" }]} onCambio={poner("dato")} />
-      <CampoNumero etiqueta={dato === "A" ? "Corriente" : "Potencia activa"} unidad={dato} valor={campos.valor} onCambio={poner("valor")} />
+      <CampoNumero principal etiqueta={dato === "A" ? "Corriente" : "Potencia activa"} unidad={dato} valor={campos.valor} onCambio={poner("valor")} />
       <CampoNumero etiqueta="Tensión" unidad="V" valor={campos.tension} placeholder={sistema === "trifasico" ? "380" : "220"} onCambio={poner("tension")} ayuda={sistema === "trifasico" ? "Entre fases." : "Fase-neutro."} />
       <CampoNumero etiqueta="cos φ" valor={campos.cos} onCambio={poner("cos")} ayuda="1 para cargas resistivas." />
       {error && <ErrorHerramienta mensaje={error} />}

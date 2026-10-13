@@ -26,7 +26,7 @@ export function CampoNumero({ etiqueta, valor, onCambio, unidad, ayuda, placehol
       <label htmlFor={id} className="text-sm font-medium text-slate-700">
         {etiqueta}
       </label>
-      <div className={`flex items-center rounded-lg ${principal ? "h-16" : "h-12"} border border-slate-300 bg-white focus-within:border-amber-500 focus-within:ring-2 focus-within:ring-amber-200`}>
+      <div className={`flex items-center rounded-lg ${principal ? "h-16" : "h-12"} border border-slate-300 bg-superficie focus-within:border-amber-500 focus-within:ring-2 focus-within:ring-amber-200`}>
         <input
           id={id}
           inputMode="decimal"

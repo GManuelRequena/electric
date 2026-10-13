@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { EsqueletoPagina } from "@/componentes/Esqueleto";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useRef, useState } from "react";
 import { Boton } from "@/componentes/Boton";
@@ -40,7 +41,7 @@ export function EditorProyecto() {
 
   const hallazgos = useMemo(() => (p ? validarProyecto(p) : []), [p]);
 
-  if (p === undefined) return <p className="p-4 text-slate-600">Cargando…</p>;
+  if (p === undefined) return <EsqueletoPagina tarjetas={3} alto="h-16" />;
   if (p === null) {
     return (
       <Pagina titulo="Proyecto" atras="/proyectos">

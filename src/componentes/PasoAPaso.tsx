@@ -4,14 +4,14 @@ import { Cita } from "./Cita";
 
 export function PasoAPaso({ pasos, titulo = "Ver cálculo paso a paso" }: { pasos: Paso[]; titulo?: string }) {
   return (
-    <details className="group rounded-xl border border-slate-200 bg-white">
+    <details className="group rounded-xl border border-linea bg-superficie">
       <summary className="flex min-h-12 cursor-pointer items-center justify-between px-4 text-base font-medium">
         {titulo}
         <span aria-hidden className="text-slate-400 transition group-open:rotate-90">
           ›
         </span>
       </summary>
-      <ol className="anim-list flex flex-col gap-4 border-t border-slate-200 px-4 py-4">
+      <ol className="anim-list flex flex-col gap-4 border-t border-linea px-4 py-4">
         {pasos.map((p, i) => (
           <li key={i} className="flex flex-col gap-1">
             <h3 className="text-sm font-semibold text-slate-900">

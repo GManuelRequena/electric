@@ -41,7 +41,7 @@ export default function Vivienda() {
 
   return (
     <Pagina titulo="Vivienda" atras="/calcular">
-      <CampoNumero etiqueta="Superficie cubierta" unidad="m²" valor={sup} onCambio={setSup} />
+      <CampoNumero principal etiqueta="Superficie cubierta" unidad="m²" valor={sup} onCambio={setSup} />
       <CampoNumero etiqueta="Superficie semicubierta (opcional)" unidad="m²" valor={semi} onCambio={setSemi} ayuda="Cuenta al 50 %." />
 
       <section aria-label="Ambientes" className="flex flex-col gap-2">

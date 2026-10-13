@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { Boton } from "@/componentes/Boton";
 import { aNumero, CampoNumero } from "@/componentes/CampoNumero";
 import { HojaInferior } from "@/componentes/HojaInferior";
+import { EsqueletoTarjetas } from "@/componentes/Esqueleto";
 import { Pagina } from "@/componentes/Pagina";
 import { Segmentado, Selector } from "@/componentes/Selector";
 import { importarProyecto } from "@/dominio/proyecto/esquema";
@@ -41,14 +42,14 @@ export default function Proyectos() {
 
   return (
     <Pagina titulo="Proyectos">
-      {lista === null && <p className="text-slate-600">Cargando…</p>}
-      {lista?.length === 0 && <p className="rounded-xl bg-white p-4 text-slate-600">Armá una vivienda por ambientes y la app asigna los circuitos según la norma.</p>}
+      {lista === null && <EsqueletoTarjetas cantidad={3} alto="h-16" />}
+      {lista?.length === 0 && <p className="rounded-xl bg-superficie p-4 text-texto-suave">Armá una vivienda por ambientes y la app asigna los circuitos según la norma.</p>}
       <ul aria-label="Proyectos guardados" className="anim-list flex flex-col gap-2">
         {lista?.map((p) => (
           <li key={p.id}>
-            <Link href={`/proyectos/ver?id=${p.id}`} className="flex min-h-16 flex-col justify-center rounded-xl border border-slate-200 bg-white px-4 py-3">
+            <Link href={`/proyectos/ver?id=${p.id}`} className="flex min-h-16 flex-col justify-center rounded-xl border border-linea bg-superficie px-4 py-3">
               <span className="text-lg font-semibold">{p.nombre}</span>
-              <span className="text-sm text-slate-600">
+              <span className="text-sm text-texto-suave">
                 {p.superficieM2} m² · {p.ambientes.length} {p.ambientes.length === 1 ? "ambiente" : "ambientes"} · {p.circuitos.length} {p.circuitos.length === 1 ? "circuito" : "circuitos"}
               </span>
             </Link>
@@ -110,7 +111,7 @@ function FormNuevo({ onCrear }: { onCrear: (p: Proyecto) => void | Promise<void>
       />
       <label className="flex flex-col gap-1 text-sm font-medium text-slate-700">
         Nombre
-        <input value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Casa de los García" className="h-12 rounded-lg border border-slate-300 bg-white px-3 text-base font-normal" />
+        <input value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Casa de los García" className="h-12 rounded-lg border border-slate-300 bg-superficie px-3 text-base font-normal" />
       </label>
       <CampoNumero etiqueta="Superficie" unidad="m²" valor={sup} onCambio={setSup} ayuda="Cubierta; define el grado de electrificación." />
       <Segmentado

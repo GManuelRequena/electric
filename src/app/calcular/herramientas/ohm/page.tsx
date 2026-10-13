@@ -23,7 +23,7 @@ export default function Ohm() {
   return (
     <Pagina titulo="Ley de Ohm" atras="/calcular/herramientas">
       <p className="text-sm text-slate-600">Completá exactamente dos datos; la app calcula los otros dos.</p>
-      <CampoNumero etiqueta="Tensión" unidad="V" valor={campos.v} onCambio={poner("v")} />
+      <CampoNumero principal etiqueta="Tensión" unidad="V" valor={campos.v} onCambio={poner("v")} />
       <CampoNumero etiqueta="Corriente" unidad="A" valor={campos.i} onCambio={poner("i")} />
       <CampoNumero etiqueta="Resistencia" unidad="Ω" valor={campos.r} onCambio={poner("r")} />
       <CampoNumero etiqueta="Potencia" unidad="W" valor={campos.p} onCambio={poner("p")} />
