@@ -19,6 +19,18 @@ test("navegación: barra inferior en móvil, sidebar en desktop", async ({ page 
   }
 });
 
+test("al tocar un enlace interno aparece la barra de progreso", async ({ page }) => {
+  await page.goto("/calcular", { waitUntil: "networkidle" }); // hidratada: los handlers del cliente ya están puestos
+  // Se retienen las peticiones de navegación para que la barra tenga tiempo de verse.
+  await page.route("**/*", async (r) => {
+    if (r.request().headers()["rsc"]) await new Promise((f) => setTimeout(f, 800));
+    await r.continue();
+  });
+  await page.getByRole("navigation", { name: "Navegación principal" }).getByRole("link", { name: "Presupuesto" }).click();
+  await expect(page.locator(".nav-progreso, .nav-progreso-fin")).toHaveCount(1);
+  await expect(page).toHaveURL(/\/presupuesto/);
+});
+
 test("la barra de progreso y el esqueleto no tapan el contenido: se navega y se llega", async ({ page }) => {
   await page.goto("/calcular");
   await page.getByRole("navigation", { name: "Navegación principal" }).getByRole("link", { name: "Proyectos" }).click();
@@ -28,7 +40,7 @@ test("la barra de progreso y el esqueleto no tapan el contenido: se navega y se 
 });
 
 test("el cálculo rápido abre con el dato principal enfocado y sigue mostrando el paso a paso", async ({ page }) => {
-  await page.goto("/calcular/rapida");
+  await page.goto("/calcular/rapida", { waitUntil: "networkidle" });
   const campo = page.getByLabel("Potencia");
   await expect(campo).toBeFocused();
   await campo.fill("2000");

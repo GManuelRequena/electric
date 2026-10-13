@@ -34,8 +34,9 @@ export function BarraProgreso() {
       setVuelta((v) => v + 1);
       setEstado("cargando");
     };
-    document.addEventListener("click", alTocar);
-    return () => document.removeEventListener("click", alTocar);
+    // En captura: el <Link> de Next hace preventDefault en su propio handler, y ahí ya no se distingue la navegación.
+    document.addEventListener("click", alTocar, true);
+    return () => document.removeEventListener("click", alTocar, true);
   }, []);
 
   // Se apaga sola: al terminar la animación de cierre, o si la navegación nunca llegó (seguridad).
