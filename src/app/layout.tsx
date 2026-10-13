@@ -2,8 +2,10 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { AplicarTema, SCRIPT_TEMA } from "@/componentes/AplicarTema";
 import { AvisoLegal } from "@/componentes/AvisoLegal";
+import { BarraProgreso } from "@/componentes/BarraProgreso";
 import { NavInferior } from "@/componentes/NavInferior";
 import { RegistrarSW } from "@/componentes/RegistrarSW";
+import { Sidebar } from "@/componentes/Sidebar";
 
 export const metadata: Metadata = {
   title: "Electricista",
@@ -26,10 +28,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: SCRIPT_TEMA }} />
       </head>
       <body>
-        <main className="mx-auto min-h-dvh max-w-2xl px-4 pt-4 pb-40">
-          {children}
-          <AvisoLegal />
-        </main>
+        <BarraProgreso />
+        <Sidebar />
+        <div className="md:pl-56">
+          <main className="mx-auto min-h-dvh max-w-2xl px-4 pt-4 pb-40 md:pt-8 md:pb-32">
+            {children}
+            <AvisoLegal />
+          </main>
+        </div>
         <NavInferior />
         <RegistrarSW />
         <AplicarTema />

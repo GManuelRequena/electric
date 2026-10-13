@@ -52,7 +52,7 @@ export default function Rapida() {
       <div className="flex flex-col gap-3">
         <Segmentado etiqueta="Sistema" valor={sistema} opciones={[{ valor: "monofasico", texto: "Monofásico" }, { valor: "trifasico", texto: "Trifásico" }]} onCambio={setSistema} />
         <Segmentado etiqueta="Dato de la carga" valor={dato} opciones={[{ valor: "W", texto: "Potencia (W)" }, { valor: "A", texto: "Corriente (A)" }]} onCambio={(d) => { setDato(d); setValor(""); }} />
-        <CampoNumero etiqueta={dato === "W" ? "Potencia" : "Corriente"} unidad={dato} valor={valor} onCambio={setValor} />
+        <CampoNumero principal etiqueta={dato === "W" ? "Potencia" : "Corriente"} unidad={dato} valor={valor} onCambio={setValor} />
         <CampoNumero etiqueta="cos φ" valor={cos} onCambio={setCos} ayuda="1 para cargas resistivas." />
         <Selector etiqueta="Tipo de carga" valor={uso} opciones={[{ valor: "toma", texto: "Tomacorrientes" }, { valor: "iluminacion", texto: "Iluminación" }, { valor: "propio", texto: "Equipo con circuito propio" }]} onCambio={setUso} />
         <CampoNumero etiqueta="Largo (opcional)" unidad="m" valor={largo} onCambio={setLargo} />
@@ -70,7 +70,7 @@ export default function Rapida() {
         <>
           <DetalleCircuito r={r} />
           <BotonConsultar pregunta="¿Está bien este circuito según la AEA 90364?" contexto={`Carga de ${valor} ${dato}, ${sistema}. Cable ${fmt(r.seccionMm2)} mm², térmica ${r.termicaA} A curva ${r.curva}.`} />
-          <div className="fixed inset-x-0 bottom-16 z-20 mx-auto max-w-2xl px-4 pb-2">
+          <div className="barra-fija mx-auto max-w-2xl px-4 pb-2">
             <TarjetaResultado r={r} />
           </div>
         </>

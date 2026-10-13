@@ -16,7 +16,7 @@ export default function Calcular() {
   const [ultimos, setUltimos] = useAlmacen<CalculoGuardado[]>("ultimos", []);
   return (
     <Pagina titulo="Calcular">
-      <ul className="flex flex-col gap-3">
+      <ul className="anim-list flex flex-col gap-3">
         {TARJETAS.map((t) => (
           <li key={t.href}>
             <Link href={t.href} className="flex min-h-24 items-center gap-4 rounded-2xl border border-slate-200 bg-white p-4 active:bg-slate-100">

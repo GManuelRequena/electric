@@ -284,7 +284,7 @@ export default function CalculoPorArtefactos() {
       )}
 
       {r && (
-        <div className="fixed inset-x-0 bottom-16 z-20 mx-auto max-w-2xl px-4 pb-2">
+        <div className="barra-fija mx-auto max-w-2xl px-4 pb-2">
           <TarjetaResultado r={r} />
         </div>
       )}

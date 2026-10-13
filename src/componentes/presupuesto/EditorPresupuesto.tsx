@@ -153,7 +153,7 @@ export function EditorPresupuesto() {
         {mensaje && <p role="status" className="text-sm text-slate-700">{mensaje}</p>}
       </section>
 
-      <div aria-label="Total" role="region" className="fixed inset-x-0 bottom-16 z-20 border-t border-slate-200 bg-white/95 px-4 py-2 backdrop-blur">
+      <div aria-label="Total" role="region" className="barra-fija border-t border-slate-200 bg-white/95 px-4 py-2 backdrop-blur">
         <dl className="mx-auto flex max-w-2xl items-center justify-between gap-2 text-sm">
           <div>
             <dt className="text-xs text-slate-500">Materiales {pesos(presupuesto.materiales)} · M. de obra {pesos(presupuesto.manoDeObra)}</dt>

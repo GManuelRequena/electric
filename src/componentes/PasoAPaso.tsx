@@ -11,7 +11,7 @@ export function PasoAPaso({ pasos, titulo = "Ver cálculo paso a paso" }: { paso
           ›
         </span>
       </summary>
-      <ol className="flex flex-col gap-4 border-t border-slate-200 px-4 py-4">
+      <ol className="anim-list flex flex-col gap-4 border-t border-slate-200 px-4 py-4">
         {pasos.map((p, i) => (
           <li key={i} className="flex flex-col gap-1">
             <h3 className="text-sm font-semibold text-slate-900">

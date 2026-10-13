@@ -43,7 +43,7 @@ export default function Proyectos() {
     <Pagina titulo="Proyectos">
       {lista === null && <p className="text-slate-600">Cargando…</p>}
       {lista?.length === 0 && <p className="rounded-xl bg-white p-4 text-slate-600">Armá una vivienda por ambientes y la app asigna los circuitos según la norma.</p>}
-      <ul aria-label="Proyectos guardados" className="flex flex-col gap-2">
+      <ul aria-label="Proyectos guardados" className="anim-list flex flex-col gap-2">
         {lista?.map((p) => (
           <li key={p.id}>
             <Link href={`/proyectos/ver?id=${p.id}`} className="flex min-h-16 flex-col justify-center rounded-xl border border-slate-200 bg-white px-4 py-3">

@@ -12,7 +12,7 @@ const HERRAMIENTAS = [
 export default function Herramientas() {
   return (
     <Pagina titulo="Herramientas" atras="/calcular">
-      <ul className="flex flex-col gap-3">
+      <ul className="anim-list flex flex-col gap-3">
         {HERRAMIENTAS.map((t) => (
           <li key={t.href}>
             <Link href={t.href} className="flex min-h-20 items-center gap-4 rounded-2xl border border-slate-200 bg-white p-4 active:bg-slate-100">

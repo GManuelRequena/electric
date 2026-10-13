@@ -29,7 +29,7 @@ export default function Presupuesto() {
         </p>
       )}
       {lista && lista.length > 0 && <p className="text-sm text-slate-600">Elegí un proyecto para ver el cómputo de materiales y armar el presupuesto.</p>}
-      <ul aria-label="Proyectos para presupuestar" className="flex flex-col gap-2">
+      <ul aria-label="Proyectos para presupuestar" className="anim-list flex flex-col gap-2">
         {lista?.map((p) => (
           <li key={p.id}>
             <Link href={`/presupuesto/ver?id=${p.id}`} className="flex min-h-16 flex-col justify-center rounded-xl border border-slate-200 bg-white px-4 py-3">

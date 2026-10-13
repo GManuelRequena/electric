@@ -15,9 +15,9 @@ No cambia ningún cálculo ni ningún valor normativo. `src/dominio/**` no se to
 - Componentes en `src/componentes/`:
   - `Esqueleto` (bloque con brillo) y variantes de lista y tarjeta.
   - `BarraProgreso` de navegación (barra fina arriba que se completa al llegar la ruta).
-  - `ListaAnimada` (entrada escalonada de hijos).
+  - Clase `.anim-list` (entrada escalonada de los hijos de una lista) y `.anim-in` / `.screen-in` en `globals.css`.
   - Shell responsive: la `NavInferior` actual en mobile y una sidebar en desktop, con columna central acotada.
-  - `CampoImporte` (campo principal grande con foco automático) para los formularios de cálculo.
+  - `CampoNumero principal` (campo principal grande con foco automático) en los formularios de cálculo.
   - Botón principal fijo abajo en formularios largos.
 - `loading.tsx` por ruta principal con la forma real de la pantalla.
 - Aplicar a: `/calcular/*`, `/proyectos`, `/presupuesto`, `/consultar` y `/ajustes`.
@@ -54,9 +54,23 @@ No cambia ningún cálculo ni ningún valor normativo. `src/dominio/**` no se to
 - Todos los E2E existentes siguen en verde, con capturas nuevas a 390×844 y 1280×800.
 - `npm run lint && npm test` en verde.
 
-## Preguntas abiertas
+## Decisiones tomadas
 
-Hacerlas antes de empezar:
+- Marca: se mantiene el ámbar `#f59e0b`.
+- Modo oscuro: migración a tokens semánticos **de a poco** (los tokens nuevos conviven con las clases `slate-*` actuales).
+- Barra inferior: 4 secciones + botón central "Nuevo cálculo" (`/calcular/rapida`). Ajustes vive en la sidebar de desktop y en un link de `/calcular`.
+- Desktop: sidebar fija de 14 rem y columna central de ~672 px (`max-w-2xl`), desde 768 px.
+- Alcance: todas las pantallas de la lista.
+
+## Estado
+
+Hecho: tokens, `.anim-*`, `Esqueleto`, `BarraProgreso`, `Sidebar`, `NavInferior` con botón central, `loading.tsx` global, `.barra-fija`, `CampoNumero principal` en `/calcular/rapida`.
+
+Pendiente: `loading.tsx` con forma propia por ruta, `CampoNumero principal` en las demás calculadoras, `.anim-list` en las listas restantes y migrar pantallas a los tokens semánticos.
+
+## Preguntas abiertas (resueltas)
+
+Se hicieron antes de empezar:
 
 1. **Marca y paleta.** Hoy el tema usa ámbar (`#f59e0b`). ¿Se mantiene como color de marca o preferís otro (por ejemplo violeta, azul o verde)?
 2. **Migración del modo oscuro.** ¿Migramos todo a tokens semánticos de una vez (más prolijo, toca muchos archivos) o de a poco, pantalla por pantalla?

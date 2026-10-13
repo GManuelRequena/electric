@@ -13,7 +13,7 @@ export function Boton({ variante = "primario", className = "", ...props }: Butto
     <button
       type="button"
       {...props}
-      className={`min-h-12 rounded-xl px-4 text-base font-semibold disabled:opacity-50 ${ESTILOS[variante]} ${className}`}
+      className={`min-h-12 rounded-xl px-4 text-base font-semibold transition-transform active:scale-[0.98] disabled:opacity-50 ${ESTILOS[variante]} ${className}`}
     />
   );
 }

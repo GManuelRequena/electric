@@ -89,6 +89,143 @@
   color: #e2e8f0;
 }
 
+/* ---------- Base de UI (fase 6) ----------
+   Tokens semánticos nuevos (se usan en componentes nuevos; el resto migra de a poco) y tokens de movimiento.
+   Filosofía: docs/ui/filosofia-ui.md */
+@theme {
+  --color-marca: #f59e0b;
+  --color-marca-fuerte: #b45309;
+  --color-marca-suave: #fffbeb;
+  --color-superficie: #ffffff;
+  --color-superficie-hundida: #f1f5f9;
+  --color-linea: #e2e8f0;
+  --color-texto: #0f172a;
+  --color-texto-suave: #475569;
+}
+
+:root[data-tema="oscuro"] {
+  --color-marca: #fbbf24;
+  --color-marca-fuerte: #fbbf24;
+  --color-marca-suave: #3a2a0a;
+  --color-superficie: #1e293b;
+  --color-superficie-hundida: #0f172a;
+  --color-linea: #334155;
+  --color-texto: #e2e8f0;
+  --color-texto-suave: #cbd5e1;
+}
+
+:root {
+  --ease-salida: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-importe: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-item: 0.22s;
+  --dur-bloque: 0.34s;
+  --dur-salida: 0.16s;
+  --ancho-sidebar: 14rem;
+}
+
+@keyframes item-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes screen-in {
+  from { transform: translateY(6px); }
+  to { transform: none; }
+}
+@keyframes esqueleto-brillo {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}
+@keyframes nav-progreso {
+  0% { opacity: 1; transform: scaleX(0); }
+  40% { transform: scaleX(0.55); }
+  100% { opacity: 1; transform: scaleX(0.92); }
+}
+@keyframes nav-progreso-fin {
+  from { opacity: 1; transform: scaleX(0.92); }
+  60% { opacity: 1; transform: scaleX(1); }
+  to { opacity: 0; transform: scaleX(1); }
+}
+
+/* Aparición de un bloque suelto (resultados, avisos). */
+.anim-in {
+  animation: var(--dur-item) var(--ease-salida) both item-in;
+}
+/* Entrada escalonada de los hijos de una lista (hasta 8; del 9.º en adelante entran juntos). */
+.anim-list > * {
+  animation: var(--dur-item) var(--ease-salida) both item-in;
+}
+.anim-list > :nth-child(2) { animation-delay: 0.04s; }
+.anim-list > :nth-child(3) { animation-delay: 0.08s; }
+.anim-list > :nth-child(4) { animation-delay: 0.12s; }
+.anim-list > :nth-child(5) { animation-delay: 0.16s; }
+.anim-list > :nth-child(6) { animation-delay: 0.2s; }
+.anim-list > :nth-child(7) { animation-delay: 0.24s; }
+.anim-list > :nth-child(n + 8) { animation-delay: 0.28s; }
+
+/* Pantalla que entra: solo se desplaza (sin opacidad, así el contenido se lee de inmediato). */
+.screen-in {
+  animation: var(--dur-bloque) var(--ease-salida) backwards screen-in;
+}
+
+/* Esqueleto: bloque con la forma del contenido y un brillo que se desplaza. */
+.esqueleto {
+  background: linear-gradient(
+    90deg,
+    var(--color-slate-100, #f1f5f9) 25%,
+    var(--color-slate-200, #e2e8f0) 37%,
+    var(--color-slate-100, #f1f5f9) 63%
+  );
+  background-size: 200% 100%;
+  animation: 1.4s ease-in-out infinite esqueleto-brillo;
+}
+
+/* Barra de progreso de navegación. */
+.nav-progreso {
+  transform-origin: left;
+  animation: 1.4s var(--ease-importe) forwards nav-progreso;
+}
+.nav-progreso-fin {
+  transform-origin: left;
+  animation: 0.35s ease-out forwards nav-progreso-fin;
+}
+
+/* Barra fija inferior (resultado, total): sobre la navegación en móvil y al ras abajo en desktop. */
+.barra-fija {
+  position: fixed;
+  inset-inline: 0;
+  bottom: calc(4rem + env(safe-area-inset-bottom));
+  z-index: 20;
+}
+@media (min-width: 768px) {
+  .barra-fija {
+    left: var(--ancho-sidebar);
+    bottom: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .anim-in,
+  .anim-list > *,
+  .screen-in {
+    animation: none;
+  }
+  .esqueleto {
+    animation: none;
+  }
+  .nav-progreso {
+    animation: none;
+    opacity: 0.6;
+    transform: scaleX(1);
+  }
+  .nav-progreso-fin {
+    animation: none;
+    opacity: 0;
+  }
+}
+
 body {
   background: #f1f5f9;
   color: #0f172a;
