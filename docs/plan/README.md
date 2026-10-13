@@ -24,6 +24,7 @@ Una fase por sesión. Revisá el resultado en el celular antes de pasar a la sig
   - [ ] 5.D Nube y multiusuario
   - [x] 5.E Herramientas extra (Ohm, potencia CA, consumo y costo, factor de potencia, fotovoltaico; falta Icc, ver P53)
   - [x] 5.F Calidad de vida (modo oscuro, compartir por link, historial, plantillas)
+- [ ] [Fase 6: Base de UI (sensación de app)](fase-6-base-ui.md) · estilo de referencia: [filosofia-ui.md](../ui/filosofia-ui.md)
 
 > Fase 0: estructura y loaders completos; varias tablas quedan parciales o `verificado: false` (ver `npm run norma:pendientes`).
 
